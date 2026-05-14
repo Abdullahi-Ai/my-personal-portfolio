@@ -26,7 +26,7 @@ const About = () => {
           >
             <div className="absolute inset-0 bg-primary/20 rounded-3xl blur-2xl transform -rotate-6"></div>
             <div className="relative rounded-3xl overflow-hidden glass-card border border-white/10 aspect-[4/5] max-w-md mx-auto">
-              <img src={myImage} alt="Abdullahi Ibrahim" className="w-full h-full object-cover" />
+              <img src={myImage} alt="Abdullahi Ibrahim" loading="lazy" className="w-full h-full object-cover" />
             </div>
           </motion.div>
 

@@ -1,4 +1,6 @@
 # Abdullahi Ibrahim - Premium Professional Portfolio
+**Live Link:** [https://my-personal-portfolio-delta-one.vercel.app/](https://my-personal-portfolio-delta-one.vercel.app/)
+
 
 A high-end, premium web portfolio designed for businesses, startups, and NGOs. This project showcases the intersection of software development and human behavior (Sociology & Psychology).
 
