@@ -16,10 +16,17 @@ import WelcomeOverlay from './components/WelcomeOverlay';
 import { AnimatePresence } from 'framer-motion';
 
 function App() {
-  const [hasEntered, setHasEntered] = useState(false);
+  const [hasEntered, setHasEntered] = useState(true);
 
   useEffect(() => {
-    if (!hasEntered) {
+    const isMobile = window.innerWidth < 768;
+    if (isMobile) {
+      setHasEntered(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!hasEntered && window.innerWidth < 768) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'unset';
@@ -36,7 +43,11 @@ function App() {
   return (
     <div className="bg-background min-h-screen text-foreground font-sans overflow-x-hidden">
       <AnimatePresence>
-        {!hasEntered && <WelcomeOverlay onEnter={() => setHasEntered(true)} />}
+        {!hasEntered && (
+          <div className="md:hidden">
+            <WelcomeOverlay onEnter={() => setHasEntered(true)} />
+          </div>
+        )}
       </AnimatePresence>
       <Navbar />
       <Hero />
