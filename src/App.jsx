@@ -27,12 +27,12 @@ function App() {
       <Hero />
       <Suspense fallback={<div className="h-20 flex items-center justify-center"><div className="w-6 h-6 border-2 border-primary border-t-transparent rounded-full animate-spin"></div></div>}>
         <About />
+        <TechStack />
         <Education />
         <Services />
         <Portfolio />
         <WhyWorkWithMe />
         <Testimonials />
-        <TechStack />
         <Experience />
         <Contact />
         <Footer />

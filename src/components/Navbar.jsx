@@ -42,7 +42,7 @@ const Navbar = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-background/80 backdrop-blur-md border-b border-white/10 py-4' : 'bg-transparent py-6'
+        isScrolled && !isMobileMenuOpen ? 'bg-background/80 backdrop-blur-md border-b border-white/10 py-4' : 'bg-transparent py-6'
       }`}
     >
       <div className="container mx-auto px-6 lg:px-12 flex items-center justify-between">
@@ -53,7 +53,7 @@ const Navbar = () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
             window.history.replaceState('', document.title, window.location.pathname);
           }}
-          className="flex items-center gap-2 group"
+          className="flex items-center gap-2 group relative z-[60]"
         >
           <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary to-emerald-400 flex items-center justify-center text-background font-bold text-xl group-hover:scale-105 transition-transform">
             <Code2 size={24} />

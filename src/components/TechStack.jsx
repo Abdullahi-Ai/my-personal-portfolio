@@ -23,7 +23,7 @@ const TechStack = () => {
           viewport={{ once: true }}
           className="text-3xl md:text-4xl font-bold mb-16"
         >
-          My <span className="text-gradient-primary">Tech Arsenal</span>
+          My <span className="text-gradient-primary">Tech Stack</span>
         </motion.h2>
 
         <div className="flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-12">
