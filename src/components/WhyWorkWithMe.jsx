@@ -3,12 +3,12 @@ import { CheckCircle2, Zap, Layout, Search, Brain, Bot } from 'lucide-react';
 
 const WhyWorkWithMe = () => {
   const reasons = [
-    { icon: Layout, title: 'Modern Premium UI', desc: 'Interfaces that feel luxurious, cutting-edge, and build immediate trust.' },
-    { icon: Zap, title: 'Fast-Loading & Mobile Ready', desc: 'Optimized for lightning-fast performance across all devices and screen sizes.' },
-    { icon: Bot, title: 'AI & Automation', desc: 'Building intelligent AI agents and automation systems that solve real problems and streamline workflows.' },
-    { icon: Brain, title: 'Psychology-Driven Design', desc: 'Understanding user behavior to craft intuitive and engaging digital journeys.' },
-    { icon: Search, title: 'SEO & Business Focused', desc: 'Built to rank higher, convert better, and achieve your business goals.' },
-    { icon: CheckCircle2, title: 'Human-Centered Experience', desc: 'Focusing on the people who will actually use your product.' },
+    { icon: Layout, title: 'Modern Premium UI', desc: 'Interfaces that feel clean, modern, and build immediate trust.' },
+    { icon: Zap, title: 'Fast-Loading & Mobile Ready', desc: 'Optimized for responsive performance across mobile, tablet, and desktop screens.' },
+    { icon: Bot, title: 'AI & Automation', desc: 'Building AI-powered applications and automation workflows that solve practical problems.' },
+    { icon: Brain, title: 'User-Centered UI/UX', desc: 'Designing intuitive, accessible interfaces informed by usability and user behavior.' },
+    { icon: Search, title: 'SEO & Web Standards', desc: 'Structured semantic HTML, metadata, and clean architecture built for discoverability.' },
+    { icon: CheckCircle2, title: 'Full-Stack Execution', desc: 'Delivering frontend interfaces, backend APIs, and database integrations end to end.' },
   ];
 
   return (
@@ -28,7 +28,7 @@ const WhyWorkWithMe = () => {
               Why Work <br className="hidden sm:inline"/><span className="text-gradient-primary">With Me?</span>
             </h2>
             <p className="text-foreground/70 text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
-              I focus on writing clean code and designing responsive interfaces informed by an understanding of human behavior.
+              I focus on writing clean, maintainable code and building responsive web applications and AI-powered solutions.
             </p>
             <a
               href="#contact"

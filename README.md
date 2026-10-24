@@ -12,8 +12,8 @@ Abdullahi Ibrahim (Osman), also known as Abdullahi-Ai, is a software developer b
 
 ### Education
 
-- **Bachelor of Arts in Social Sciences** — specializing in Sociology and Psychology, University of Nairobi
 - **Certificate in Software Development** — Moringa School (Full Stack Web Development & UI/UX)
+- **Bachelor of Arts in Social Sciences** — specializing in Sociology and Psychology, University of Nairobi (Expected graduation: December 2026)
 
 ### Professional Interests
 
@@ -89,9 +89,8 @@ This portfolio includes:
 
 - **Email**: osmannoor75200@gmail.com
 - **GitHub**: [Abdullahi-Ai](https://github.com/Abdullahi-Ai)
-- **LinkedIn**: [Abdullahi Ibrahim (Osman)](https://www.linkedin.com/in/osman-noor-08a297358)
-- **Instagram**: [@osmanibrahim5181](https://instagram.com/osmanibrahim5181)
-- **WhatsApp**: [0781764187](https://wa.me/254781764187)
+- **LinkedIn**: [Abdullahi Ibrahim (Osman)](https://www.linkedin.com/in/osman-noor-08a297358/)
+- **Instagram**: [@osmanibrahim5181](https://www.instagram.com/osmanibrahim5181/)
 
 ---
 

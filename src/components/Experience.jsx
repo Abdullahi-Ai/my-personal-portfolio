@@ -3,15 +3,15 @@ import { motion } from 'framer-motion';
 const Experience = () => {
   const journey = [
     {
-      year: 'Academic',
-      title: 'University of Nairobi',
-      desc: 'Bachelor of Arts in Social Sciences, specializing in Sociology and Psychology.',
+      year: 'Software Training',
+      title: 'Moringa School',
+      desc: 'Certificate in Software Development covering frontend and full-stack web development and UI/UX.',
       align: 'left',
     },
     {
-      year: 'Certification',
-      title: 'Moringa School',
-      desc: 'Certificate in Software Development covering frontend and full-stack web development and UI/UX.',
+      year: 'University (Expected Dec 2026)',
+      title: 'University of Nairobi',
+      desc: 'Pursuing a Bachelor of Arts in Social Sciences, specializing in Sociology and Psychology.',
       align: 'right',
     },
     {
@@ -22,7 +22,7 @@ const Experience = () => {
     },
     {
       year: 'Present',
-      title: 'Software Developer',
+      title: 'Software Developer in Kenya',
       desc: 'Focused on building modern web applications and AI-powered solutions, including a RAG-based shopping assistant.',
       align: 'right',
     },
@@ -40,7 +40,7 @@ const Experience = () => {
           >
             My <span className="text-gradient-primary">Journey</span>
           </motion.h2>
-          <p className="text-foreground/70 max-w-2xl mx-auto text-sm sm:text-base">From studying human behavior to building web applications and AI-powered solutions.</p>
+          <p className="text-foreground/70 max-w-2xl mx-auto text-sm sm:text-base">Building modern web applications, full-stack software, and AI-powered solutions in Kenya.</p>
         </div>
 
         <div className="max-w-4xl mx-auto relative">

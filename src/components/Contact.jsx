@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MessageCircle, Phone, Send } from 'lucide-react';
+import { Mail, Send } from 'lucide-react';
 
 const GithubIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -38,9 +38,11 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const text = `Hello Abdullahi,\n\nMy name is ${formData.name} (${formData.email}).\nSubject: ${formData.subject}\n\n${formData.message}`;
-    const whatsappUrl = `https://wa.me/254781764187?text=${encodeURIComponent(text)}`;
-    window.open(whatsappUrl, '_blank');
+    const subject = encodeURIComponent(formData.subject || 'Portfolio Inquiry');
+    const body = encodeURIComponent(
+      `Hello Abdullahi,\n\nMy name is ${formData.name} (${formData.email}).\n\n${formData.message}`
+    );
+    window.location.href = `mailto:osmannoor75200@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -57,30 +59,10 @@ const Contact = () => {
               Let’s Build Something <br className="hidden sm:inline"/><span className="text-gradient-primary">Together</span>
             </h2>
             <p className="text-foreground/70 text-base sm:text-lg mb-8 sm:mb-10">
-              Based in Kenya — reach out to discuss web development, software applications, or AI-powered projects.
+              Based in Kenya — connect with Abdullahi Ibrahim (Osman) for web development, full-stack applications, or AI-powered projects.
             </p>
 
             <div className="space-y-4">
-              <a href="tel:0781764187" className="flex items-center gap-4 group p-4 glass-card rounded-xl hover:border-primary/50 transition-all">
-                <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
-                  <Phone className="text-primary" size={22} />
-                </div>
-                <div className="min-w-0">
-                  <span className="block text-xs sm:text-sm text-foreground/60">Phone</span>
-                  <span className="font-medium text-base sm:text-lg">0781764187</span>
-                </div>
-              </a>
-
-              <a href="https://wa.me/254781764187" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group p-4 glass-card rounded-xl hover:border-emerald-500/50 transition-all">
-                <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-emerald-500/10 flex items-center justify-center shrink-0 group-hover:bg-emerald-500/20 transition-colors">
-                  <MessageCircle className="text-emerald-400" size={22} />
-                </div>
-                <div className="min-w-0">
-                  <span className="block text-xs sm:text-sm text-foreground/60">WhatsApp</span>
-                  <span className="font-medium text-base sm:text-lg">0781764187</span>
-                </div>
-              </a>
-
               <a href="mailto:osmannoor75200@gmail.com" className="flex items-center gap-4 group p-4 glass-card rounded-xl hover:border-primary/50 transition-all">
                 <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
                   <Mail className="text-primary" size={22} />
@@ -90,17 +72,47 @@ const Contact = () => {
                   <span className="font-medium text-base sm:text-lg break-all">osmannoor75200@gmail.com</span>
                 </div>
               </a>
+
+              <a href="https://github.com/Abdullahi-Ai" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group p-4 glass-card rounded-xl hover:border-primary/50 transition-all">
+                <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors text-primary">
+                  <GithubIcon />
+                </div>
+                <div className="min-w-0">
+                  <span className="block text-xs sm:text-sm text-foreground/60">GitHub</span>
+                  <span className="font-medium text-base sm:text-lg break-all">github.com/Abdullahi-Ai</span>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/osman-noor-08a297358/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group p-4 glass-card rounded-xl hover:border-primary/50 transition-all">
+                <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors text-primary">
+                  <LinkedinIcon />
+                </div>
+                <div className="min-w-0">
+                  <span className="block text-xs sm:text-sm text-foreground/60">LinkedIn</span>
+                  <span className="font-medium text-base sm:text-lg break-all">linkedin.com/in/osman-noor-08a297358</span>
+                </div>
+              </a>
+
+              <a href="https://www.instagram.com/osmanibrahim5181/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group p-4 glass-card rounded-xl hover:border-primary/50 transition-all">
+                <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors text-primary">
+                  <InstagramIcon />
+                </div>
+                <div className="min-w-0">
+                  <span className="block text-xs sm:text-sm text-foreground/60">Instagram</span>
+                  <span className="font-medium text-base sm:text-lg break-all">@osmanibrahim5181</span>
+                </div>
+              </a>
             </div>
 
             <div className="flex gap-4 mt-8 sm:mt-10">
-              <a href="https://instagram.com/osmanibrahim5181" target="_blank" rel="noopener noreferrer" aria-label="Follow Abdullahi Ibrahim (Osman) on Instagram" className="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:text-primary transition-colors hover:-translate-y-1">
-                <InstagramIcon />
-              </a>
-              <a href="https://www.linkedin.com/in/osman-noor-08a297358" target="_blank" rel="noopener noreferrer" aria-label="Connect with Abdullahi Ibrahim (Osman) on LinkedIn" className="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:text-primary transition-colors hover:-translate-y-1">
-                <LinkedinIcon />
-              </a>
               <a href="https://github.com/Abdullahi-Ai" target="_blank" rel="noopener noreferrer" aria-label="View Abdullahi Ibrahim (Osman)'s projects on GitHub" className="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:text-primary transition-colors hover:-translate-y-1">
                 <GithubIcon />
+              </a>
+              <a href="https://www.linkedin.com/in/osman-noor-08a297358/" target="_blank" rel="noopener noreferrer" aria-label="Connect with Abdullahi Ibrahim (Osman) on LinkedIn" className="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:text-primary transition-colors hover:-translate-y-1">
+                <LinkedinIcon />
+              </a>
+              <a href="https://www.instagram.com/osmanibrahim5181/" target="_blank" rel="noopener noreferrer" aria-label="Follow Abdullahi Ibrahim (Osman) on Instagram" className="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:text-primary transition-colors hover:-translate-y-1">
+                <InstagramIcon />
               </a>
             </div>
           </motion.div>

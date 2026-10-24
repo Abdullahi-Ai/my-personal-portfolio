@@ -55,7 +55,7 @@ const Navbar = () => {
             window.history.replaceState('', document.title, window.location.pathname);
           }}
           className="flex items-center gap-2 group relative z-[60]"
-          aria-label="Abdullahi Ibrahim Home"
+          aria-label="Abdullahi Ibrahim (Osman) Home"
         >
           <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary to-emerald-400 flex items-center justify-center text-background font-bold text-xl group-hover:scale-105 transition-transform">
             <Code2 size={24} />

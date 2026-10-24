@@ -72,30 +72,12 @@ const About = () => {
                 <strong className="text-foreground">Abdullahi Ibrahim (Osman)</strong>, also known as <strong className="text-foreground">Abdullahi-Ai</strong>, is a software developer based in Kenya who builds web applications and AI-powered solutions.
               </p>
               <p>
-                He studied a <strong>Bachelor of Arts in Social Sciences</strong>, specializing in <strong>Sociology and Psychology</strong> at the <strong>University of Nairobi</strong>, alongside software development training at <strong>Moringa School</strong>. Explore his <a href="#portfolio" className="text-primary hover:underline">projects</a>, <a href="#education" className="text-primary hover:underline">education</a>, or <a href="#contact" className="text-primary hover:underline">get in touch</a>.
+                He trained in software development at <strong>Moringa School</strong> (Full Stack Web Development &amp; UI/UX) and is pursuing a <strong>Bachelor of Arts in Social Sciences</strong> specializing in <strong>Sociology and Psychology</strong> at the <strong>University of Nairobi</strong> (expected graduation December 2026). Explore his <a href="#portfolio" className="text-primary hover:underline">projects</a>, <a href="#education" className="text-primary hover:underline">education</a>, or <a href="#contact" className="text-primary hover:underline">get in touch</a>.
               </p>
             </div>
 
             <div className="flex flex-wrap items-center gap-2.5 sm:gap-3 mb-8 sm:mb-10 pb-6 border-b border-white/10">
               <span className="text-xs uppercase tracking-wider text-foreground/60 font-semibold mr-1">Connect:</span>
-              <a
-                href="https://www.linkedin.com/in/osman-noor-08a297358"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full glass-card hover:border-primary/50 text-foreground/90 hover:text-primary transition-all text-sm font-medium"
-                aria-label="Connect with Abdullahi Ibrahim (Osman) on LinkedIn"
-              >
-                <LinkedinIcon /> LinkedIn
-              </a>
-              <a
-                href="https://instagram.com/osmanibrahim5181"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full glass-card hover:border-primary/50 text-foreground/90 hover:text-primary transition-all text-sm font-medium"
-                aria-label="Follow Abdullahi Ibrahim (Osman) on Instagram"
-              >
-                <InstagramIcon /> @osmanibrahim5181
-              </a>
               <a
                 href="https://github.com/Abdullahi-Ai"
                 target="_blank"
@@ -104,6 +86,24 @@ const About = () => {
                 aria-label="View Abdullahi Ibrahim (Osman)'s GitHub"
               >
                 <GithubIcon /> GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/osman-noor-08a297358/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full glass-card hover:border-primary/50 text-foreground/90 hover:text-primary transition-all text-sm font-medium"
+                aria-label="Connect with Abdullahi Ibrahim (Osman) on LinkedIn"
+              >
+                <LinkedinIcon /> LinkedIn
+              </a>
+              <a
+                href="https://www.instagram.com/osmanibrahim5181/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full glass-card hover:border-primary/50 text-foreground/90 hover:text-primary transition-all text-sm font-medium"
+                aria-label="Follow Abdullahi Ibrahim (Osman) on Instagram"
+              >
+                <InstagramIcon /> @osmanibrahim5181
               </a>
             </div>
 

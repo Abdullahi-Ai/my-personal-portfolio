@@ -58,7 +58,7 @@ const external = [];
 const cdnUrls = [];
 
 for (const url of allUrls) {
-  if (url.includes('my-personal-portfolio-delta-one.vercel.app')) {
+  if (url.includes('www.abdullahiibrahim.co.ke')) {
     internal.push(url);
   } else if (url.includes('cdn.') || url.includes('unpkg.com') || url.includes('jsdelivr')) {
     cdnUrls.push(url);

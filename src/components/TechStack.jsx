@@ -12,6 +12,17 @@ const TechStack = () => {
     { name: 'GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg', invertOnDark: true },
   ];
 
+  const additionalSkills = [
+    'SQLAlchemy',
+    'REST APIs',
+    'Firebase',
+    'MongoDB',
+    'Figma',
+    'LangChain',
+    'ChromaDB',
+    'Electron',
+  ];
+
   return (
     <section className="py-16 sm:py-24 relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-12 text-center">
@@ -46,6 +57,17 @@ const TechStack = () => {
               </div>
               <span className="text-xs sm:text-sm font-medium text-foreground/80 group-hover:text-primary transition-colors">{tech.name}</span>
             </motion.div>
+          ))}
+        </div>
+
+        <div className="mt-10 sm:mt-12 flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 max-w-3xl mx-auto">
+          {additionalSkills.map((skill) => (
+            <span
+              key={skill}
+              className="px-4 py-2 rounded-full glass-card border border-white/10 text-xs sm:text-sm font-medium text-foreground/80 hover:border-primary/40 hover:text-primary transition-colors"
+            >
+              {skill}
+            </span>
           ))}
         </div>
       </div>
