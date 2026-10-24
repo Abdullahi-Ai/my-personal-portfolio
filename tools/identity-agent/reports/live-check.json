@@ -1,6 +1,6 @@
 {
-  "url": "https://my-personal-portfolio-delta-one.vercel.app/",
-  "checkedAt": "2026-10-24T09:30:30.603Z",
+  "url": "https://www.abdullahiibrahim.co.ke/",
+  "checkedAt": "2026-10-24T10:10:48.230Z",
   "checks": [
     {
       "name": "Homepage returns HTTP 200",
@@ -10,7 +10,7 @@
     {
       "name": "Deployed title matches local build",
       "ok": true,
-      "detail": "live=\"Abdullahi Ibrahim | Software Developer &amp; AI Enthusiast\" local=\"Abdullahi Ibrahim | Software Developer &amp; AI Enthusiast\""
+      "detail": "live=\"Abdullahi Ibrahim | Software Developer\" local=\"Abdullahi Ibrahim | Software Developer\""
     },
     {
       "name": "Canonical URL is the deployed URL",
@@ -43,7 +43,7 @@
       "detail": "200 application/xml"
     },
     {
-      "name": "Sitemap URL returns 200: https://my-personal-portfolio-delta-one.vercel.app/",
+      "name": "Sitemap URL returns 200: https://www.abdullahiibrahim.co.ke/",
       "ok": true,
       "detail": "200"
     },
