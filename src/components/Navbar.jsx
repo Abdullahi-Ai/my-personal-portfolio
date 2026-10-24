@@ -17,6 +17,7 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Home', href: '#' },
     { name: 'About', href: '#about' },
+    { name: 'Education', href: '#education' },
     { name: 'Services', href: '#services' },
     { name: 'Portfolio', href: '#portfolio' },
     { name: 'Experience', href: '#experience' },
@@ -151,11 +152,11 @@ const Navbar = () => {
               </div>
               <div className="flex flex-col items-center gap-1">
                 <div className="w-1.5 h-1.5 rounded-full bg-primary mb-1" />
-                AI & Agentic AI
+                AI & Automation
               </div>
               <div className="flex flex-col items-center gap-1">
                 <div className="w-1.5 h-1.5 rounded-full bg-primary mb-1" />
-                Full Stack Dev
+                Software Engineering
               </div>
             </div>
           </motion.div>

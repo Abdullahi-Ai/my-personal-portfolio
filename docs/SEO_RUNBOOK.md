@@ -20,7 +20,9 @@ npm run report       # writes reports/report-<date>.md
 4. **Sitemaps** → submit `sitemap.xml`.
 5. **URL inspection** → paste the homepage URL → **Test live URL** → **Request indexing**.
 6. Check **Pages** (indexing status), **Performance** (queries, impressions, clicks, CTR, position) and **Enhancements** for structured-data issues.
-7. Compare Performance exports monthly. Impressions and position measure search performance. They are not proof of indexing; use URL inspection for that.
+7. **Pages to inspect:** the site is a single page. About, Education and Projects are sections of `/` (`#about`, `#education`, `#portfolio`), not separate URLs, so Search Console can only inspect `/`. Separate indexable pages would need routing plus pre-rendering (not done, to avoid a rebuild).
+8. Watch **Performance → Queries** for: `Abdullahi Ibrahim`, `Abdullahi-Ai`, `Abdullahi Ibrahim software developer`, `Abdullahi Ibrahim University of Nairobi`, `Abdullahi Ibrahim software projects`.
+9. Compare Performance exports monthly. Impressions and position measure search performance. They are not proof of indexing; use URL inspection for that.
 
 Indexing can take days to weeks. A search for the bare name "Abdullahi Ibrahim" competes with other people with that name, so expect "Abdullahi-Ai" and "Abdullahi Ibrahim Software Developer" to work first.
 
@@ -35,7 +37,7 @@ Indexing can take days to weeks. A search for the bare name "Abdullahi Ibrahim" 
 ## 4. GitHub profile (you must do this; the agent cannot edit it)
 The API shows `name`, `bio` and `blog` are all empty.
 - **Name:** `Abdullahi Ibrahim`
-- **Bio (example, edit freely):** `Software Developer and AI Developer | Web apps, RAG and AI agents | Abdullahi-Ai`
+- **Bio (≤160 chars):** `Software Developer | Web Applications | AI & Automation | Sociology & Psychology, University of Nairobi | Abdullahi-Ai`
 - **Website:** `https://my-personal-portfolio-delta-one.vercel.app/`
 - Pin the repositories that best represent you (`osman-accessories-ai`, `my-personal-portfolio`, and the project repos listed on the site).
 - Add descriptions and topics to those repositories (they are currently empty), and add a profile README in the `Abdullahi-Ai/Abdullahi-Ai` repository.

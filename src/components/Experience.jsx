@@ -3,15 +3,15 @@ import { motion } from 'framer-motion';
 const Experience = () => {
   const journey = [
     {
-      year: '2022 - 2026',
-      title: 'Graduation from University of Nairobi',
-      desc: 'Earned Bachelor of Arts and Social Sciences, Double Major in Sociology & Psychology. Developed a deep understanding of human behavior, user cognition, and social dynamics.',
+      year: 'Academic',
+      title: 'University of Nairobi: Sociology and Psychology',
+      desc: 'Double major in Sociology and Psychology, building an understanding of human behavior, cognition, and social dynamics that informs user-centred software.',
       align: 'left',
     },
     {
       year: '2025',
       title: 'Moringa School Certification',
-      desc: 'Intensive training in Software Development. Mastered Frontend and Full Stack development, transitioning into a professional digital creator.',
+      desc: 'Intensive training in software development, covering frontend and full-stack web development and UI/UX.',
       align: 'right',
     },
     {
@@ -22,8 +22,8 @@ const Experience = () => {
     },
     {
       year: 'Present',
-      title: 'Software Developer & AI Developer',
-      desc: 'Specializing in premium business websites, AI-powered applications, and agentic AI systems. Exploring AI agents, automation, and intelligent software solutions while delivering high-end web experiences.',
+      title: 'Software Developer',
+      desc: 'Building web applications and exploring AI agents, automation, and AI-powered applications, including a RAG-based shopping assistant prototype.',
       align: 'right',
     },
   ];
@@ -40,7 +40,7 @@ const Experience = () => {
           >
             My <span className="text-gradient-primary">Journey</span>
           </motion.h2>
-          <p className="text-foreground/70 max-w-2xl mx-auto">From understanding human behavior to building web applications and AI-powered solutions.</p>
+          <p className="text-foreground/70 max-w-2xl mx-auto">From studying human behavior to building web applications and exploring AI.</p>
         </div>
 
         <div className="max-w-4xl mx-auto relative">

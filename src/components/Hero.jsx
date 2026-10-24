@@ -7,9 +7,8 @@ import AgentLiveTerminal from './AgentLiveTerminal';
 const Hero = () => {
   const roles = [
     'Software Developer',
-    'AI Developer',
-    'Agentic AI Engineer',
-    'Full-Stack Developer',
+    'Web Application Developer',
+    'AI & Automation Enthusiast',
   ];
   const [roleIndex, setRoleIndex] = useState(0);
 
@@ -74,7 +73,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-foreground/70 mb-10 max-w-2xl mx-auto leading-relaxed"
           >
-            I build modern web applications and AI-powered solutions. Interests include business websites, AI agents, and agentic AI systems.
+            I'm a software developer building web applications and exploring artificial intelligence, AI agents, and automation. See my projects below or get in touch.
           </motion.p>
 
           <motion.div
@@ -113,10 +112,10 @@ const Hero = () => {
               <CheckCircle2 size={16} className="text-primary" /> Web Development
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 size={16} className="text-primary" /> AI & Agentic AI
+              <CheckCircle2 size={16} className="text-primary" /> AI & Automation
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 size={16} className="text-primary" /> Full Stack Dev
+              <CheckCircle2 size={16} className="text-primary" /> Software Engineering
             </div>
           </motion.div>
         </div>

@@ -69,13 +69,13 @@ const About = () => {
             
             <div className="space-y-6 text-foreground/80 text-lg leading-relaxed mb-8">
               <p>
-                Hi, I'm <strong className="text-foreground">Abdullahi Ibrahim</strong>, also known as <strong className="text-foreground">Abdullahi-Ai</strong>. I'm a Software Developer and AI Developer specializing in building high-end, premium web experiences and AI-powered solutions for businesses, startups, and NGOs.
+                Hi, I'm <strong className="text-foreground">Abdullahi Ibrahim</strong>, also known professionally as <strong className="text-foreground">Abdullahi-Ai</strong>. I'm a software developer interested in building practical web applications and exploring artificial intelligence, AI agents, and automation. My work focuses on software development, problem-solving, and building applications that address real-world needs.
               </p>
               <p>
-                Holding a Bachelor of Arts and Social Sciences from the <strong>University of Nairobi</strong>, with a <strong>Double Major in Sociology and Psychology</strong>, I have a versatile background that allows me to deeply understand human behavior and work effectively across diverse fields and industries.
+                I have an academic background in <strong>Sociology and Psychology</strong> from the <strong>University of Nairobi</strong>, where I studied a double major in both disciplines. It complements my interest in technology, human behaviour, and practical digital solutions. <a href="#education" className="text-primary hover:underline">Read about my education</a>.
               </p>
               <p>
-                Coupled with a Software Development Certification from <strong>Moringa School</strong>, I bring high adaptability to my development work. My interests include software development, artificial intelligence, AI agents, agentic AI systems, and AI automation. Whether you need a stunning front-end web interface, a highly optimized marketing website, or an AI-powered application, I've got you covered. For complex, large-scale Full-Stack applications, I collaborate with a dedicated team of experts to ensure we deliver a robust and perfect solution tailored to your exact needs.
+                I also hold a Software Development certification from <strong>Moringa School</strong>. Explore my <a href="#portfolio" className="text-primary hover:underline">software projects</a>, technical skills, and AI interests, or <a href="#contact" className="text-primary hover:underline">get in touch</a>.
               </p>
             </div>
 

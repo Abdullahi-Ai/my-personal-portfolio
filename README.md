@@ -8,11 +8,11 @@
 
 ## About
 
-Professional portfolio of **Abdullahi Ibrahim**, also known as **Abdullahi-Ai** — a Software Developer and AI Developer specializing in modern web applications, artificial intelligence, AI agents, agentic AI systems, and AI automation.
+Professional portfolio of **Abdullahi Ibrahim**, also known as **Abdullahi-Ai** — a software developer building web applications and exploring artificial intelligence, AI agents, and automation.
 
 ### Education
 
-- **Bachelor of Arts and Social Sciences** — University of Nairobi (Double Major in Sociology &amp; Psychology)
+- **University of Nairobi** — Double major in Sociology and Psychology
 - **Certificate in Software Development** — Moringa School (Full Stack Web Development &amp; UI/UX)
 
 ### Professional Interests
@@ -93,4 +93,4 @@ This portfolio includes:
 
 ---
 
-*Built by Abdullahi Ibrahim (Abdullahi-Ai) — Software Developer & AI Developer*
+*Built by Abdullahi Ibrahim (Abdullahi-Ai) — Software Developer & AI Enthusiast*

@@ -43,7 +43,7 @@ report.push('');
 report.push('## 2. Education');
 report.push('');
 for (const edu of identity.education) {
-  report.push(`- **${edu.institution}**: ${edu.degree || edu.certification}`);
+  report.push(`- **${edu.institution}**: ${edu.degree || edu.certification || (edu.fieldsOfStudy||[]).join(' & ') + ' (' + edu.structure + ')'}`);
   if (edu.specialization) report.push(`  - Specialization: ${edu.specialization}`);
   if (edu.focus) report.push(`  - Focus: ${edu.focus}`);
 }

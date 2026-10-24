@@ -4,7 +4,7 @@ import { Layout, Globe, Smartphone, Palette, Code2, ShoppingCart, HeartHandshake
 const Services = () => {
   const services = [
     { icon: Globe, title: 'Business Websites', desc: 'Professional, responsive business websites that present your brand clearly.' },
-    { icon: Bot, title: 'AI & Agentic AI Solutions', desc: 'Intelligent AI agents, automation systems, and AI-powered applications that streamline workflows and solve real problems.' },
+    { icon: Bot, title: 'AI & Automation Projects', desc: 'Exploring AI-powered applications, RAG assistants, and workflow automation, with a public prototype on GitHub.' },
     { icon: HeartHandshake, title: 'NGO & Charity Websites', desc: 'Trust-building platforms for organizations to showcase impact and receive donations.' },
     { icon: Layout, title: 'Landing Pages', desc: 'Focused, conversion-optimized landing pages for marketing campaigns and product launches.' },
     { icon: Workflow, title: 'AI Automation', desc: 'Automated workflows using AI agents and modern tools to improve efficiency and reduce manual work.' },

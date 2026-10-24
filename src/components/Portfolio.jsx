@@ -11,7 +11,8 @@ const Portfolio = () => {
   const projects = [
     {
       title: 'Osman AI Shopping Assistant',
-      status: 'Prototype / portfolio project',
+      category: 'AI Application',
+      status: 'Prototype',
       desc: 'A RAG-based shopping assistant for an electronics store. A React storefront calls a FastAPI backend that retrieves store knowledge from ChromaDB (sentence-transformers embeddings), builds a prompt with LangChain and answers with a configurable LLM (Groq, Gemini or OpenAI). Includes a retrieval evaluation script.',
       tech: ['Python', 'FastAPI', 'LangChain', 'ChromaDB', 'React'],
       githubUrl: 'https://github.com/Abdullahi-Ai/osman-accessories-ai',
@@ -19,6 +20,7 @@ const Portfolio = () => {
     },
     {
       title: 'Health Psychology Hospital',
+      category: 'Web Application',
       desc: 'A modern healthcare and psychology-focused hospital website with professional medical UI, responsive layouts, premium sections, and patient-centered user experience.',
       tech: ['React', 'Tailwind CSS', 'JavaScript'],
       liveUrl: 'https://abdullahi-ai.github.io/health-psychology-Hospital',
@@ -27,6 +29,7 @@ const Portfolio = () => {
     },
     {
       title: 'LuqmanTech Portfolio',
+      category: 'Web Application',
       desc: 'A sleek modern technology portfolio website showcasing premium frontend design, animations, smooth layouts, and modern branding aesthetics.',
       tech: ['React', 'Tailwind CSS', 'Framer Motion'],
       liveUrl: 'https://luqmantech.vercel.app/',
@@ -35,6 +38,7 @@ const Portfolio = () => {
     },
     {
       title: 'Al-Yaqin Education Centre',
+      category: 'Web Application',
       desc: 'An elegant Islamic educational institution website focused on Quran learning, modern education systems, Islamic branding, and responsive school presentation.',
       tech: ['React', 'Tailwind CSS'],
       liveUrl: 'https://al-yaqin-education-centre-ggvu.vercel.app/',
@@ -43,6 +47,7 @@ const Portfolio = () => {
     },
     {
       title: 'Mambasa Group Agency',
+      category: 'Web Application',
       desc: 'A premium digital agency and branding website built for marketing, business growth, and modern online presence.',
       tech: ['React', 'Tailwind CSS', 'JavaScript'],
       liveUrl: 'https://mambsa-group-agency.vercel.app/',
@@ -51,6 +56,7 @@ const Portfolio = () => {
     },
     {
       title: 'Mumtaaz Girls High School',
+      category: 'Web Application',
       desc: 'A modern academic institution website designed with elegant educational presentation, admissions information, responsive layouts, and student-centered design experience.',
       tech: ['React', 'Tailwind CSS'],
       liveUrl: 'https://mumtaaz-girls-high-school.vercel.app/',
@@ -59,6 +65,7 @@ const Portfolio = () => {
     },
     {
       title: 'The Light of Peace Charity',
+      category: 'Web Application',
       desc: 'A premium Islamic humanitarian NGO platform focused on orphan support, community outreach, clean water projects, zakah distribution, and humanitarian services.',
       tech: ['React', 'Tailwind CSS', 'Framer Motion'],
       liveUrl: 'https://the-light-of-peace.vercel.app/',
@@ -123,9 +130,9 @@ const Portfolio = () => {
                 </div>
                 
                 <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">{project.title}</h3>
-                {project.status && (
-                  <p className="text-xs uppercase tracking-wider text-foreground/50 mb-3">{project.status}</p>
-                )}
+                <p className="text-xs uppercase tracking-wider text-foreground/50 mb-3">
+                  {[project.category, project.status].filter(Boolean).join(' · ')}
+                </p>
                 <p className="text-foreground/70 text-sm leading-relaxed mb-6 flex-1">
                   {project.desc}
                 </p>

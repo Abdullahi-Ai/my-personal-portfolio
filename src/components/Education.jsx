@@ -3,7 +3,7 @@ import { GraduationCap, Award, BookOpen, Brain } from 'lucide-react';
 
 const Education = () => {
   return (
-    <section className="py-24 relative bg-card/20 border-y border-white/5">
+    <section id="education" className="py-24 relative bg-card/20 border-y border-white/5">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="text-center mb-16">
           <motion.h2
@@ -42,11 +42,11 @@ const Education = () => {
               <BookOpen size={28} className="text-primary" />
             </div>
             
-            <span className="text-sm font-semibold text-primary tracking-wider uppercase mb-2 block">University Degree</span>
+            <span className="text-sm font-semibold text-primary tracking-wider uppercase mb-2 block">University Studies</span>
             <h3 className="text-2xl font-bold mb-2">University of Nairobi</h3>
-            <p className="text-xl text-foreground/90 mb-3 font-medium">Bachelor of Arts and Social Sciences</p>
+            <p className="text-xl text-foreground/90 mb-3 font-medium">Sociology and Psychology</p>
             <div className="inline-block px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-semibold uppercase tracking-wider mb-4">
-              Double Major: Sociology &amp; Psychology
+              Double Major
             </div>
             
             <div className="flex items-center gap-3 text-foreground/70 bg-black/20 p-4 rounded-xl border border-white/5">

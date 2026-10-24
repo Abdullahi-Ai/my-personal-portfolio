@@ -2,7 +2,7 @@
 export const identity = {
   name: "Abdullahi Ibrahim",
   alternateName: "Abdullahi-Ai",
-  professionalTitle: "Software Developer and AI Developer",
+  professionalTitle: "Software Developer (AI & automation enthusiast)",
   
   website: {
     url: "https://my-personal-portfolio-delta-one.vercel.app/",
@@ -45,12 +45,14 @@ export const identity = {
   education: [
     {
       institution: "University of Nairobi",
-      degree: "Bachelor of Arts and Social Sciences",
-      specialization: "Double Major in Sociology and Psychology",
-      period: "2022 - 2026",
+      fieldsOfStudy: ["Sociology", "Psychology"],
+      structure: "Double major",
+      // Graduation status, degree title and dates are NOT confirmed by the owner, so the site and
+      // structured data must not state them. Do not add alumniOf until graduation is confirmed.
+      graduationStatus: "unconfirmed",
       verified: true,
-      verifiedDate: "2026-10-23",
-      source: "Education.jsx and About.jsx components",
+      verifiedDate: "2026-10-24",
+      source: "Owner instruction (2026-10-24): double major in Sociology and Psychology",
     },
     {
       institution: "Moringa School",
@@ -59,7 +61,7 @@ export const identity = {
       year: "2025",
       verified: true,
       verifiedDate: "2026-10-23",
-      source: "Education.jsx and About.jsx components",
+      source: "Education.jsx and About.jsx components (existing site content)",
     },
   ],
 
@@ -73,11 +75,10 @@ export const identity = {
     "UI/UX Design",
   ],
 
-  technologies: [
-    "React", "JavaScript", "Tailwind CSS", "Node.js", "Express",
-    "MongoDB", "Firebase", "Vite", "Framer Motion", "GSAP",
-    "Python", "GitHub", "Figma",
-  ],
+  // Confirmed by package.json / source in the owner's repositories (checked 2026-10-24):
+  technologies: ["React", "Tailwind CSS", "JavaScript", "Framer Motion", "Vite", "Python", "FastAPI", "LangChain", "ChromaDB", "GitHub"],
+  // Listed on the site's Tech Stack section but NOT found in any inspected repository. Awaiting owner confirmation:
+  technologiesUnconfirmed: ["Node.js", "Express", "MongoDB", "Firebase", "Figma"],
 
   contact: {
     email: "osmannoor75200@gmail.com",
@@ -218,6 +219,10 @@ export const identity = {
 
   // Actions that must NOT be performed automatically. The agent only reports on these.
   pendingApprovals: [
+    "Confirm whether the WhatsApp number 0781764187 is also for calls, so a tel: link can be added",
+    "Confirm University of Nairobi graduation status (site currently makes no claim)",
+    "Confirm or remove unverified skills: Node.js, Express, MongoDB, Firebase, Figma",
+    "Provide your actual contribution for each project (currently not stated)",
     "Rename LinkedIn profile / custom URL, then confirm it for sameAs",
     "Confirm or remove Instagram link and the contact email on the site",
     "Update GitHub profile name, bio and website fields",

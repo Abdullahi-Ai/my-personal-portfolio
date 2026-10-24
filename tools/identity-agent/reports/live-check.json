@@ -1,6 +1,6 @@
 {
   "url": "https://my-personal-portfolio-delta-one.vercel.app/",
-  "checkedAt": "2026-10-24T08:53:08.278Z",
+  "checkedAt": "2026-10-24T08:59:11.182Z",
   "checks": [
     {
       "name": "Homepage returns HTTP 200",
@@ -9,17 +9,17 @@
     },
     {
       "name": "Deployed title matches local build",
-      "ok": false,
-      "detail": "live=\"my-personal-portfolio\" local=\"Abdullahi Ibrahim (Abdullahi-Ai) | Software Developer and AI Developer\""
+      "ok": true,
+      "detail": "live=\"Abdullahi Ibrahim (Abdullahi-Ai) | Software Developer and AI Developer\" local=\"Abdullahi Ibrahim (Abdullahi-Ai) | Software Developer and AI Developer\""
     },
     {
       "name": "Canonical URL is the deployed URL",
-      "ok": false,
+      "ok": true,
       "detail": ""
     },
     {
       "name": "JSON-LD present in deployed HTML",
-      "ok": false,
+      "ok": true,
       "detail": ""
     },
     {
@@ -29,8 +29,8 @@
     },
     {
       "name": "robots.txt is served as plain text",
-      "ok": false,
-      "detail": "404 text/plain; charset=utf-8"
+      "ok": true,
+      "detail": "200 text/plain; charset=utf-8"
     },
     {
       "name": "robots.txt does not block everything",
@@ -39,18 +39,23 @@
     },
     {
       "name": "sitemap.xml is served as XML",
-      "ok": false,
-      "detail": "404 text/plain; charset=utf-8"
+      "ok": true,
+      "detail": "200 application/xml"
+    },
+    {
+      "name": "Sitemap URL returns 200: https://my-personal-portfolio-delta-one.vercel.app/",
+      "ok": true,
+      "detail": "200"
     },
     {
       "name": "profile.png is an image",
-      "ok": false,
-      "detail": "404 text/plain; charset=utf-8"
+      "ok": true,
+      "detail": "200 image/png"
     },
     {
       "name": "og-image.png is an image",
-      "ok": false,
-      "detail": "404 text/plain; charset=utf-8"
+      "ok": true,
+      "detail": "200 image/png"
     },
     {
       "name": "favicon.svg is an image",
