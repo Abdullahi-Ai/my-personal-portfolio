@@ -50,13 +50,6 @@ const Portfolio = () => {
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
     },
     {
-      title: 'Zamanijets Airline',
-      desc: 'A luxurious airline booking web application featuring premium flight search functionality, seat selection systems, modern booking flow, glassmorphism UI.',
-      tech: ['Vite', 'Tailwind CSS', 'JavaScript'],
-      liveUrl: 'https://zamanjets.vercel.app/',
-            image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80',
-    },
-    {
       title: 'Mumtaaz Girls High School',
       desc: 'A modern academic institution website designed with elegant educational presentation, admissions information, responsive layouts, and student-centered design experience.',
       tech: ['React', 'Tailwind CSS'],

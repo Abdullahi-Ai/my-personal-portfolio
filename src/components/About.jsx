@@ -27,8 +27,8 @@ const InstagramIcon = () => (
 const About = () => {
   // Figures below are counted from the Featured Projects section and the Education section.
   const stats = [
-    { label: 'Featured Projects', value: '8', icon: Code },
-    { label: 'Live Demos', value: '7', icon: Users },
+    { label: 'Featured Projects', value: '7', icon: Code },
+    { label: 'Live Demos', value: '6', icon: Users },
     { label: 'AI / RAG Project', value: '1', icon: Lightbulb },
     { label: 'Education & Certifications', value: '2', icon: BarChart },
   ];

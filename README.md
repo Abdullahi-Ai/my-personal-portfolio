@@ -54,7 +54,6 @@ Professional portfolio of **Abdullahi Ibrahim**, also known as **Abdullahi-Ai** 
 | [LuqmanTech Portfolio](https://luqmantech.vercel.app/) | Modern tech portfolio with animations | React, Tailwind CSS, Framer Motion |
 | [Al-Yaqin Education Centre](https://al-yaqin-education-centre-ggvu.vercel.app/) | Islamic educational institution website | React, Tailwind CSS |
 | [Mambasa Group Agency](https://mambsa-group-agency.vercel.app/) | Digital agency and branding website | React, Tailwind CSS |
-| [Zamanijets Airline](https://zamanjets.vercel.app/) | Airline booking web application | Vite, Tailwind CSS |
 | [Mumtaaz Girls High School](https://mumtaaz-girls-high-school.vercel.app/) | Academic institution website | React, Tailwind CSS |
 | [The Light of Peace Charity](https://the-light-of-peace.vercel.app/) | Islamic humanitarian NGO platform | React, Tailwind CSS, Framer Motion |
 

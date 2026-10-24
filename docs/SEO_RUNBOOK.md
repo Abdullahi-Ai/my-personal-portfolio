@@ -55,4 +55,4 @@ These remain visible on the site for your review but are not in the structured d
 ## 6. Other recommendations
 - Replace `public/og-image.png` (currently identical to `profile.png`) with a 1200×630 card.
 - Testimonials were removed. Add them back only with real quotes and written permission.
-- The Zamanijets repository returned 404 publicly (private or renamed), so it has no source link.
+- Zamanijets Airline was removed from the portfolio at your request. It can be re-added later.

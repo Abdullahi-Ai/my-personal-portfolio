@@ -139,15 +139,6 @@ export const identity = {
       verifiedDate: "2026-10-23",
     },
     {
-      name: "Zamanijets Airline",
-      description: "Airline booking web application",
-      tech: ["Vite", "Tailwind CSS", "JavaScript"],
-      liveUrl: "https://zamanjets.vercel.app/",
-      // No public repo: https://github.com/Abdullahi-Ai/Zamanjets returned HTTP 404 on 2026-10-24 (private or renamed).
-      status: "completed",
-      verifiedDate: "2026-10-23",
-    },
-    {
       name: "Mumtaaz Girls High School",
       description: "Academic institution website",
       tech: ["React", "Tailwind CSS"],

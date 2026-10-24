@@ -17,7 +17,7 @@ const Experience = () => {
     {
       year: '2024 - 2025',
       title: 'Freelance & Modern Branding Growth',
-      desc: 'Began freelance development, focusing on modern UI/UX, responsive layouts, and business-centric digital branding. Built projects like Health Psychology Hospital and Zamanijets.',
+      desc: 'Began freelance development, focusing on modern UI/UX, responsive layouts, and business-centric digital branding. Built projects like Health Psychology Hospital.',
       align: 'left',
     },
     {
