@@ -14,11 +14,10 @@ npm run report       # writes reports/report-<date>.md
 
 ## 2. Google Search Console (requires your Google account)
 1. Open https://search.google.com/search-console/about and choose **Start now**.
-2. Add a **URL-prefix** property: `https://my-personal-portfolio-delta-one.vercel.app/`.
-   (A Domain property needs DNS access, so it only works with your own custom domain.)
-3. Verify ownership. The easiest options for Vercel are the **HTML tag** (add the `<meta name="google-site-verification" ...>` Google gives you to `index.html`, deploy, then click Verify) or the **HTML file** (put it in `public/`).
-4. **Sitemaps** → submit `sitemap.xml`.
-5. **URL inspection** → paste the homepage URL → **Test live URL** → **Request indexing**.
+2. Add a **Domain** property (`abdullahiibrahim.co.ke`) using DNS TXT verification, or a **URL-prefix** property: `https://www.abdullahiibrahim.co.ke/`.
+3. Verify ownership. For URL-prefix on Vercel, the easiest options are the **HTML tag** (add the `<meta name="google-site-verification" ...>` Google gives you to `index.html`, deploy, then click Verify) or the **HTML file** (put it in `public/`).
+4. **Sitemaps** → submit `https://www.abdullahiibrahim.co.ke/sitemap.xml`.
+5. **URL inspection** → paste `https://www.abdullahiibrahim.co.ke/` → **Test live URL** → **Request indexing**.
 6. Check **Pages** (indexing status), **Performance** (queries, impressions, clicks, CTR, position) and **Enhancements** for structured-data issues.
 7. **Pages to inspect:** the site is a single page. About, Education and Projects are sections of `/` (`#about`, `#education`, `#portfolio`), not separate URLs, so Search Console can only inspect `/`. Separate indexable pages would need routing plus pre-rendering (not done, to avoid a rebuild).
 8. Watch **Performance → Queries** for: `Abdullahi Ibrahim`, `Abdullahi-Ai`, `Abdullahi Ibrahim software developer`, `Abdullahi Ibrahim University of Nairobi`, `Abdullahi Ibrahim software projects`.
@@ -26,19 +25,14 @@ npm run report       # writes reports/report-<date>.md
 
 Indexing can take days to weeks. A search for the bare name "Abdullahi Ibrahim" competes with other people with that name, so expect "Abdullahi-Ai" and "Abdullahi Ibrahim Software Developer" to work first.
 
-## 3. Connecting a future custom domain (do this only after you own it)
-1. Buy the domain yourself, then in Vercel: Project → Settings → Domains → Add. Set the DNS records Vercel shows.
-2. Wait for the certificate, then confirm the site loads over HTTPS.
-3. Replace `https://my-personal-portfolio-delta-one.vercel.app/` with the new domain in `index.html` (canonical, `og:*`, `twitter:image`, all JSON-LD `url`/`image`), `public/robots.txt`, `public/sitemap.xml`, and `identity-memory.js` (`website.url`).
-4. Add a Vercel redirect from the old URL to the new one.
-5. Add a Domain property in Search Console (DNS TXT verification), submit the new sitemap and use the Change of Address tool only if Google offers it for your setup.
-6. Add the new domain to your GitHub profile website field and to any verified profiles.
+## 3. Custom domain status (`https://www.abdullahiibrahim.co.ke/`)
+`https://www.abdullahiibrahim.co.ke/` is live over HTTPS and `abdullahiibrahim.co.ke` redirects to `https://www.abdullahiibrahim.co.ke/`. All canonical, Open Graph, Twitter Card, JSON-LD, `robots.txt` and `sitemap.xml` URLs now use `https://www.abdullahiibrahim.co.ke/`.
 
 ## 4. GitHub profile (you must do this; the agent cannot edit it)
 The API shows `name`, `bio` and `blog` are all empty.
 - **Name:** `Abdullahi Ibrahim`
 - **Bio (≤160 chars):** `Software Developer | Web Applications | AI & Automation | Sociology & Psychology, University of Nairobi | Abdullahi-Ai`
-- **Website:** `https://my-personal-portfolio-delta-one.vercel.app/`
+- **Website:** `https://www.abdullahiibrahim.co.ke/`
 - Pin the repositories that best represent you (`osman-accessories-ai`, `my-personal-portfolio`, and the project repos listed on the site).
 - Add descriptions and topics to those repositories (they are currently empty), and add a profile README in the `Abdullahi-Ai/Abdullahi-Ai` repository.
 

@@ -30,21 +30,31 @@ function App() {
 
   return (
     <div className="bg-background min-h-screen text-foreground font-sans overflow-x-hidden">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[200] focus:px-4 focus:py-2 focus:rounded-lg focus:bg-primary focus:text-background focus:font-semibold"
+      >
+        Skip to content
+      </a>
       <motion.div
         style={{ scaleX }}
         className="fixed top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-emerald-500 via-primary to-teal-200 origin-left z-[100] shadow-[0_0_12px_rgba(16,185,129,0.8)]"
       />
       <Navbar />
-      <Hero />
-      <Suspense fallback={<div className="h-20 flex items-center justify-center"><div className="w-6 h-6 border-2 border-primary border-t-transparent rounded-full animate-spin"></div></div>}>
-        <About />
-        <TechStack />
-        <Education />
-        <Services />
-        <Portfolio />
-        <WhyWorkWithMe />
-        <Experience />
-        <Contact />
+      <main id="main-content">
+        <Hero />
+        <Suspense fallback={<div className="h-20 flex items-center justify-center"><div className="w-6 h-6 border-2 border-primary border-t-transparent rounded-full animate-spin"></div></div>}>
+          <About />
+          <TechStack />
+          <Education />
+          <Services />
+          <Portfolio />
+          <WhyWorkWithMe />
+          <Experience />
+          <Contact />
+        </Suspense>
+      </main>
+      <Suspense fallback={null}>
         <Footer />
       </Suspense>
     </div>

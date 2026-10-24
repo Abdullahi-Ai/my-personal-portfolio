@@ -16,48 +16,48 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-24 relative">
+    <section id="services" className="py-16 sm:py-24 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent mix-blend-overlay pointer-events-none" />
       
-      <div className="container mx-auto px-6 lg:px-12 relative z-10">
-        <div className="text-center mb-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
+        <div className="text-center mb-12 sm:mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-bold mb-4"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4"
           >
-            Premium <span className="text-gradient-primary">Digital Services</span>
+            Digital <span className="text-gradient-primary">Services</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-foreground/70 max-w-2xl mx-auto"
+            className="text-foreground/70 max-w-2xl mx-auto text-sm sm:text-base"
           >
-            Comprehensive web and AI solutions tailored for modern businesses, organizations, and brands.
+            Web development and AI-powered solutions for businesses, organizations, and brands.
           </motion.p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5 sm:gap-6">
           {services.map((service, idx) => (
             <motion.div
               key={idx}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="glass-card p-6 rounded-2xl hover:-translate-y-2 transition-all duration-300 group hover:shadow-[0_0_30px_rgba(16,185,129,0.15)] hover:border-primary/30 relative overflow-hidden"
+              transition={{ duration: 0.5, delay: idx * 0.06 }}
+              className="glass-card p-5 sm:p-6 rounded-2xl hover:-translate-y-2 transition-all duration-300 group hover:shadow-[0_0_30px_rgba(16,185,129,0.15)] hover:border-primary/30 relative overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               
-              <div className="w-12 h-12 rounded-xl bg-card border border-white/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors relative z-10">
+              <div className="w-12 h-12 rounded-xl bg-card border border-white/10 flex items-center justify-center mb-5 sm:mb-6 group-hover:bg-primary/20 transition-colors relative z-10">
                 <service.icon size={24} className="text-primary" />
               </div>
               
-              <h3 className="text-xl font-bold mb-3 text-foreground relative z-10">{service.title}</h3>
-              <p className="text-foreground/60 text-sm leading-relaxed relative z-10">{service.desc}</p>
+              <h3 className="text-lg sm:text-xl font-bold mb-2.5 sm:mb-3 text-foreground relative z-10">{service.title}</h3>
+              <p className="text-foreground/70 text-sm leading-relaxed relative z-10">{service.desc}</p>
             </motion.div>
           ))}
         </div>

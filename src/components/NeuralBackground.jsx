@@ -95,6 +95,7 @@ const NeuralBackground = () => {
 
     initParticles();
 
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const render = () => {
       ctx.clearRect(0, 0, width, height);
 
@@ -136,11 +137,13 @@ const NeuralBackground = () => {
       }
 
       for (let i = 0; i < particles.length; i++) {
-        particles[i].update();
+        if (!prefersReducedMotion) particles[i].update();
         particles[i].draw();
       }
 
-      animationFrameId = requestAnimationFrame(render);
+      if (!prefersReducedMotion) {
+        animationFrameId = requestAnimationFrame(render);
+      }
     };
 
     render();

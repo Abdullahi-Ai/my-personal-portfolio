@@ -4,50 +4,50 @@ const Experience = () => {
   const journey = [
     {
       year: 'Academic',
-      title: 'University of Nairobi: Sociology and Psychology',
-      desc: 'Double major in Sociology and Psychology, building an understanding of human behavior, cognition, and social dynamics that informs user-centred software.',
+      title: 'University of Nairobi',
+      desc: 'Bachelor of Arts in Social Sciences, specializing in Sociology and Psychology.',
       align: 'left',
     },
     {
-      year: '2025',
-      title: 'Moringa School Certification',
-      desc: 'Intensive training in software development, covering frontend and full-stack web development and UI/UX.',
+      year: 'Certification',
+      title: 'Moringa School',
+      desc: 'Certificate in Software Development covering frontend and full-stack web development and UI/UX.',
       align: 'right',
     },
     {
-      year: '2024 - 2025',
-      title: 'Freelance & Modern Branding Growth',
-      desc: 'Began freelance development, focusing on modern UI/UX, responsive layouts, and business-centric digital branding. Built projects like Health Psychology Hospital.',
+      year: 'Projects',
+      title: 'Web & Application Development',
+      desc: 'Built business and school websites, full-stack web applications, and a Point of Sale (POS) system.',
       align: 'left',
     },
     {
       year: 'Present',
       title: 'Software Developer',
-      desc: 'Building web applications and exploring AI agents, automation, and AI-powered applications, including a RAG-based shopping assistant prototype.',
+      desc: 'Focused on building modern web applications and AI-powered solutions, including a RAG-based shopping assistant.',
       align: 'right',
     },
   ];
 
   return (
-    <section id="experience" className="py-24 relative bg-card/10">
-      <div className="container mx-auto px-6 lg:px-12">
-        <div className="text-center mb-16">
+    <section id="experience" className="py-16 sm:py-24 relative bg-card/10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="text-center mb-12 sm:mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-bold mb-4"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4"
           >
             My <span className="text-gradient-primary">Journey</span>
           </motion.h2>
-          <p className="text-foreground/70 max-w-2xl mx-auto">From studying human behavior to building web applications and exploring AI.</p>
+          <p className="text-foreground/70 max-w-2xl mx-auto text-sm sm:text-base">From studying human behavior to building web applications and AI-powered solutions.</p>
         </div>
 
         <div className="max-w-4xl mx-auto relative">
 
           <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary via-emerald-500 to-transparent hidden md:block rounded-full opacity-30" />
 
-          <div className="space-y-12">
+          <div className="space-y-6 sm:space-y-12">
             {journey.map((item, idx) => (
               <motion.div
                 key={idx}
@@ -59,10 +59,10 @@ const Experience = () => {
                   item.align === 'right' ? 'md:flex-row-reverse' : ''
                 }`}
               >
-                <div className={`w-full md:w-[45%] ${item.align === 'right' ? 'md:text-left' : 'md:text-right'} mb-6 md:mb-0`}>
-                  <div className="glass-card p-6 md:p-8 rounded-2xl hover:border-primary/50 transition-colors">
-                    <span className="text-primary font-bold text-lg mb-2 block">{item.year}</span>
-                    <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+                <div className={`w-full md:w-[45%] ${item.align === 'right' ? 'md:text-left' : 'md:text-right'}`}>
+                  <div className="glass-card p-5 sm:p-6 md:p-8 rounded-2xl hover:border-primary/50 transition-colors">
+                    <span className="text-primary font-bold text-base sm:text-lg mb-1.5 sm:mb-2 block">{item.year}</span>
+                    <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">{item.title}</h3>
                     <p className="text-foreground/70 leading-relaxed text-sm">{item.desc}</p>
                   </div>
                 </div>

@@ -20,22 +20,22 @@ const Hero = () => {
   }, [roles.length]);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center pt-24 pb-20 sm:pb-24 overflow-hidden">
       <NeuralBackground />
 
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[140px] mix-blend-screen animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-emerald-600/10 rounded-full blur-[120px] mix-blend-screen" />
+        <div className="absolute top-1/4 left-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-primary/20 rounded-full blur-[120px] sm:blur-[140px] mix-blend-screen animate-pulse" />
+        <div className="absolute bottom-1/4 right-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-emerald-600/10 rounded-full blur-[100px] sm:blur-[120px] mix-blend-screen" />
         <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay"></div>
       </div>
 
-      <div className="container mx-auto px-6 lg:px-12 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-sm font-medium mb-8 text-primary shadow-[0_0_15px_rgba(16,185,129,0.15)]"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-xs sm:text-sm font-medium mb-6 sm:mb-8 text-primary shadow-[0_0_15px_rgba(16,185,129,0.15)]"
           >
             <span className="relative flex h-3 w-3">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
@@ -48,10 +48,10 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-tight"
+            className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight"
           >
             Hi, I'm <span className="text-gradient-primary">Abdullahi Ibrahim</span>
-            <div className="text-3xl sm:text-4xl md:text-5xl font-semibold mt-3 text-foreground/90 h-[1.3em] flex items-center justify-center overflow-hidden">
+            <div className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mt-3 text-foreground/90 min-h-[1.5em] flex items-center justify-center overflow-hidden px-2">
               <AnimatePresence mode="wait">
                 <motion.span
                   key={roles[roleIndex]}
@@ -71,20 +71,20 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg md:text-xl text-foreground/70 mb-10 max-w-2xl mx-auto leading-relaxed"
+            className="text-base sm:text-lg md:text-xl text-foreground/70 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed px-2"
           >
-            I'm a software developer building web applications and exploring artificial intelligence, AI agents, and automation. See my projects below or get in touch.
+            Abdullahi Ibrahim is a software developer focused on building modern web applications and AI-powered solutions.
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4"
           >
             <a
               href="#portfolio"
-              className="relative overflow-hidden group w-full sm:w-auto px-8 py-4 rounded-full bg-primary text-background font-semibold text-lg hover:bg-emerald-400 transition-all hover:scale-105 flex items-center justify-center gap-2 shadow-[0_0_25px_rgba(16,185,129,0.35)]"
+              className="relative overflow-hidden group w-full sm:w-auto px-7 sm:px-8 py-3.5 sm:py-4 rounded-full bg-primary text-background font-semibold text-base sm:text-lg hover:bg-emerald-400 transition-all hover:scale-105 flex items-center justify-center gap-2 shadow-[0_0_25px_rgba(16,185,129,0.35)]"
             >
               <span className="relative z-10 flex items-center gap-2">
                 View My Work <ArrowRight size={20} className="group-hover:translate-x-1.5 transition-transform duration-300" />
@@ -93,7 +93,7 @@ const Hero = () => {
             </a>
             <a
               href="#contact"
-              className="w-full sm:w-auto px-8 py-4 rounded-full glass-card hover:bg-white/10 transition-all hover:scale-105 text-lg font-medium flex items-center justify-center border border-white/10"
+              className="w-full sm:w-auto px-7 sm:px-8 py-3.5 sm:py-4 rounded-full glass-card hover:bg-white/10 transition-all hover:scale-105 text-base sm:text-lg font-medium flex items-center justify-center border border-white/10"
             >
               Hire Me
             </a>
@@ -106,16 +106,16 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.8 }}
-            className="mt-16 pt-8 border-t border-white/5 flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm text-foreground/50"
+            className="mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-white/5 flex flex-wrap justify-center gap-x-6 sm:gap-x-8 gap-y-3 text-xs sm:text-sm text-foreground/60"
           >
             <div className="flex items-center gap-2">
-              <CheckCircle2 size={16} className="text-primary" /> Web Development
+              <CheckCircle2 size={16} className="text-primary shrink-0" /> Web Development
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 size={16} className="text-primary" /> AI & Automation
+              <CheckCircle2 size={16} className="text-primary shrink-0" /> AI & Automation
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 size={16} className="text-primary" /> Software Engineering
+              <CheckCircle2 size={16} className="text-primary shrink-0" /> Software Engineering
             </div>
           </motion.div>
         </div>
@@ -125,9 +125,9 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce"
+        className="hidden sm:block absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce"
       >
-        <a href="#about" className="text-foreground/50 hover:text-primary transition-colors">
+        <a href="#about" aria-label="Scroll to About section" className="text-foreground/50 hover:text-primary transition-colors p-2 inline-block">
           <ChevronDown size={32} />
         </a>
       </motion.div>

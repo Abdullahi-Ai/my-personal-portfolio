@@ -7,16 +7,16 @@ const terminalSteps = [
     cmd: 'about --site',
     output: [
       '✔ Built with React 19, Vite 8 and Tailwind CSS 3',
-      '✔ Animations: Framer Motion and GSAP; hosted on Vercel',
+      '✔ Domain: www.abdullahiibrahim.co.ke (hosted on Vercel)',
       '✔ Source code: github.com/Abdullahi-Ai/my-personal-portfolio',
-      '⚡ Single-page site: one canonical URL, sections linked by anchors',
+      '⚡ Fully responsive across mobile, tablet and desktop screens',
     ],
     status: 'SITE_INFO',
   },
   {
     cmd: 'projects --ai',
     output: [
-      '✔ Osman AI Shopping Assistant (prototype, public repository)',
+      '✔ Osman AI Shopping Assistant (RAG prototype, public repo)',
       '✔ Stack: FastAPI, LangChain, ChromaDB, sentence-transformers',
       '✔ LLM provider is configurable: Groq, Gemini or OpenAI',
       '⚡ Includes a retrieval evaluation script (evaluate_retrieval.py)',
@@ -28,7 +28,7 @@ const terminalSteps = [
     output: [
       '✔ Schema.org JSON-LD: Person, WebSite and ProfilePage',
       '✔ Canonical URL, Open Graph and Twitter card metadata set',
-      '✔ robots.txt and sitemap.xml included in the build output',
+      '✔ robots.txt and sitemap.xml served on custom domain',
       '⚡ Checked by tools/identity-agent; search indexing is not guaranteed',
     ],
     status: 'SEO_CHECKS',
@@ -105,37 +105,38 @@ const AgentLiveTerminal = () => {
 
       <div className="relative rounded-2xl glass-card border border-white/10 bg-[#0d1117]/90 backdrop-blur-xl shadow-2xl overflow-hidden font-mono text-xs sm:text-sm">
         
-        <div className="flex items-center justify-between px-4 py-3 bg-black/40 border-b border-white/10">
-          <div className="flex items-center gap-2">
-            <div className="w-3 h-3 rounded-full bg-red-500/80 hover:bg-red-500 cursor-pointer transition-colors" />
-            <div className="w-3 h-3 rounded-full bg-yellow-500/80 hover:bg-yellow-500 cursor-pointer transition-colors" />
-            <div className="w-3 h-3 rounded-full bg-green-500/80 hover:bg-green-500 cursor-pointer transition-colors" />
-            <span className="ml-3 text-xs text-foreground/50 flex items-center gap-1.5 font-sans">
-              <Terminal size={14} className="text-primary" />
-              abdullahi-ai@agent-core: ~
+        <div className="flex items-center justify-between gap-2 px-3 sm:px-4 py-3 bg-black/40 border-b border-white/10">
+          <div className="flex items-center gap-1.5 sm:gap-2 min-w-0">
+            <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-red-500/80 shrink-0" />
+            <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-yellow-500/80 shrink-0" />
+            <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-green-500/80 shrink-0" />
+            <span className="ml-1.5 sm:ml-3 text-[11px] sm:text-xs text-foreground/60 flex items-center gap-1.5 font-sans truncate">
+              <Terminal size={14} className="text-primary shrink-0" />
+              <span className="truncate">abdullahi-ai@portfolio: ~</span>
             </span>
           </div>
 
-          <div className="flex items-center gap-3">
-            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-semibold bg-primary/10 border border-primary/30 text-primary">
+          <div className="flex items-center gap-2 shrink-0">
+            <span className="inline-flex items-center gap-1.5 px-2 sm:px-2.5 py-1 rounded-full text-[10px] font-semibold bg-primary/10 border border-primary/30 text-primary">
               <span className={`w-1.5 h-1.5 rounded-full bg-primary ${isRunning ? 'animate-ping' : ''}`} />
               {terminalSteps[stepIndex].status}
             </span>
             <button
               onClick={handleManualRun}
-              className="p-1 rounded-md text-foreground/40 hover:text-primary hover:bg-white/5 transition-colors"
+              className="p-2 rounded-md text-foreground/60 hover:text-primary hover:bg-white/5 transition-colors"
               title="Next Action"
+              aria-label="Cycle terminal summary"
             >
-              <Play size={13} />
+              <Play size={14} />
             </button>
           </div>
         </div>
 
-        <div className="p-5 space-y-3 min-h-[185px]">
-          <div className="flex items-center gap-2 text-primary font-bold">
-            <span className="text-emerald-400">$</span>
+        <div className="p-4 sm:p-5 space-y-3 min-h-[185px]">
+          <div className="flex items-center gap-2 text-primary font-bold break-all">
+            <span className="text-emerald-400 shrink-0">$</span>
             <span className="text-foreground/90">{typedCmd}</span>
-            <span className="w-2 h-4 bg-primary inline-block animate-pulse" />
+            <span className="w-2 h-4 bg-primary inline-block animate-pulse shrink-0" />
           </div>
 
           <div className="space-y-1.5 pt-2">
@@ -145,7 +146,7 @@ const AgentLiveTerminal = () => {
                 initial={{ opacity: 0, x: -6 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.2 }}
-                className="flex items-start gap-2 text-foreground/75 leading-relaxed text-xs sm:text-sm font-sans"
+                className="flex items-start gap-2 text-foreground/80 leading-relaxed text-xs sm:text-sm font-sans break-words"
               >
                 <span className="text-primary mt-0.5 shrink-0">
                   <Check size={14} />
@@ -156,16 +157,16 @@ const AgentLiveTerminal = () => {
           </div>
         </div>
 
-        <div className="px-4 py-2.5 bg-black/60 border-t border-white/5 flex items-center justify-between text-[11px] text-foreground/40 font-sans">
+        <div className="px-3 sm:px-4 py-2.5 bg-black/60 border-t border-white/5 flex flex-wrap items-center justify-between gap-2 text-[11px] text-foreground/50 font-sans">
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1">
-              <Cpu size={12} className="text-primary" /> Static summary of this site
+              <Cpu size={12} className="text-primary shrink-0" /> Static summary of this site
             </span>
             <span className="hidden sm:inline-flex items-center gap-1">
-              <Sparkles size={12} className="text-primary" /> Not a live AI agent
+              <Sparkles size={12} className="text-primary shrink-0" /> Not a live AI agent
             </span>
           </div>
-          <span className="text-primary/70">Click ▶ to cycle demo</span>
+          <span className="text-primary/80">Click ▶ to cycle</span>
         </div>
 
       </div>

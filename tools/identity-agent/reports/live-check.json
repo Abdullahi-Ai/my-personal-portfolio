@@ -1,6 +1,6 @@
 {
   "url": "https://my-personal-portfolio-delta-one.vercel.app/",
-  "checkedAt": "2026-10-24T08:59:11.182Z",
+  "checkedAt": "2026-10-24T09:30:30.603Z",
   "checks": [
     {
       "name": "Homepage returns HTTP 200",
@@ -10,7 +10,7 @@
     {
       "name": "Deployed title matches local build",
       "ok": true,
-      "detail": "live=\"Abdullahi Ibrahim (Abdullahi-Ai) | Software Developer and AI Developer\" local=\"Abdullahi Ibrahim (Abdullahi-Ai) | Software Developer and AI Developer\""
+      "detail": "live=\"Abdullahi Ibrahim | Software Developer &amp; AI Enthusiast\" local=\"Abdullahi Ibrahim | Software Developer &amp; AI Enthusiast\""
     },
     {
       "name": "Canonical URL is the deployed URL",

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MessageCircle, Send } from 'lucide-react';
+import { Mail, MessageCircle, Phone, Send } from 'lucide-react';
 
 const GithubIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -44,45 +44,55 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 relative">
-      <div className="container mx-auto px-6 lg:px-12">
-        <div className="grid lg:grid-cols-2 gap-16">
+    <section id="contact" className="py-16 sm:py-24 relative">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16">
           
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              Let’s Build Something <br/><span className="text-gradient-primary">Exceptional Together</span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 leading-tight">
+              Let’s Build Something <br className="hidden sm:inline"/><span className="text-gradient-primary">Together</span>
             </h2>
-            <p className="text-foreground/70 text-lg mb-12">
-              Whether you're a startup looking for a strong digital presence, an NGO needing a trust-building platform, or a business ready to scale, I'm here to help you succeed.
+            <p className="text-foreground/70 text-base sm:text-lg mb-8 sm:mb-10">
+              Reach out to discuss web development, software applications, or AI-powered projects.
             </p>
 
-            <div className="space-y-6">
-              <a href="mailto:osmannoor75200@gmail.com" className="flex items-center gap-4 group p-4 glass-card rounded-xl hover:border-primary/50 transition-all">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <Mail className="text-primary" size={24} />
+            <div className="space-y-4">
+              <a href="tel:0781764187" className="flex items-center gap-4 group p-4 glass-card rounded-xl hover:border-primary/50 transition-all">
+                <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                  <Phone className="text-primary" size={22} />
                 </div>
-                <div>
-                  <span className="block text-sm text-foreground/50">Email</span>
-                  <span className="font-medium text-lg break-all">osmannoor75200@gmail.com</span>
+                <div className="min-w-0">
+                  <span className="block text-xs sm:text-sm text-foreground/60">Phone</span>
+                  <span className="font-medium text-base sm:text-lg">0781764187</span>
                 </div>
               </a>
 
               <a href="https://wa.me/254781764187" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group p-4 glass-card rounded-xl hover:border-emerald-500/50 transition-all">
-                <div className="w-12 h-12 rounded-full bg-emerald-500/10 flex items-center justify-center group-hover:bg-emerald-500/20 transition-colors">
-                  <MessageCircle className="text-emerald-400" size={24} />
+                <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-emerald-500/10 flex items-center justify-center shrink-0 group-hover:bg-emerald-500/20 transition-colors">
+                  <MessageCircle className="text-emerald-400" size={22} />
                 </div>
-                <div>
-                  <span className="block text-sm text-foreground/50">WhatsApp</span>
-                  <span className="font-medium text-lg">0781764187</span>
+                <div className="min-w-0">
+                  <span className="block text-xs sm:text-sm text-foreground/60">WhatsApp</span>
+                  <span className="font-medium text-base sm:text-lg">0781764187</span>
+                </div>
+              </a>
+
+              <a href="mailto:osmannoor75200@gmail.com" className="flex items-center gap-4 group p-4 glass-card rounded-xl hover:border-primary/50 transition-all">
+                <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                  <Mail className="text-primary" size={22} />
+                </div>
+                <div className="min-w-0">
+                  <span className="block text-xs sm:text-sm text-foreground/60">Email</span>
+                  <span className="font-medium text-base sm:text-lg break-all">osmannoor75200@gmail.com</span>
                 </div>
               </a>
             </div>
 
-            <div className="flex gap-4 mt-12">
+            <div className="flex gap-4 mt-8 sm:mt-10">
               <a href="https://instagram.com/osmanibrahim5181" target="_blank" rel="noopener noreferrer" aria-label="Follow Abdullahi Ibrahim on Instagram" className="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:text-primary transition-colors hover:-translate-y-1">
                 <InstagramIcon />
               </a>
@@ -99,32 +109,32 @@ const Contact = () => {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="glass-card p-8 md:p-10 rounded-3xl"
+            className="glass-card p-6 sm:p-8 md:p-10 rounded-3xl"
           >
-            <h3 className="text-2xl font-bold mb-8">Send a Message</h3>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid sm:grid-cols-2 gap-6">
+            <h3 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8">Send a Message</h3>
+            <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
+              <div className="grid sm:grid-cols-2 gap-5 sm:gap-6">
                 <div>
-                  <label className="block text-sm font-medium text-foreground/70 mb-2">Name</label>
-                  <input type="text" name="name" value={formData.name} onChange={handleChange} required className="w-full bg-background/50 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-colors" placeholder="John Doe" />
+                  <label htmlFor="contact-name" className="block text-sm font-medium text-foreground/70 mb-2">Name</label>
+                  <input id="contact-name" type="text" name="name" value={formData.name} onChange={handleChange} required className="w-full bg-background/50 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-colors text-base" placeholder="Your Name" />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-foreground/70 mb-2">Email</label>
-                  <input type="email" name="email" value={formData.email} onChange={handleChange} required className="w-full bg-background/50 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-colors" placeholder="john@example.com" />
+                  <label htmlFor="contact-email" className="block text-sm font-medium text-foreground/70 mb-2">Email</label>
+                  <input id="contact-email" type="email" name="email" value={formData.email} onChange={handleChange} required className="w-full bg-background/50 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-colors text-base" placeholder="you@example.com" />
                 </div>
               </div>
               
               <div>
-                <label className="block text-sm font-medium text-foreground/70 mb-2">Subject</label>
-                <input type="text" name="subject" value={formData.subject} onChange={handleChange} required className="w-full bg-background/50 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-colors" placeholder="Project Inquiry" />
+                <label htmlFor="contact-subject" className="block text-sm font-medium text-foreground/70 mb-2">Subject</label>
+                <input id="contact-subject" type="text" name="subject" value={formData.subject} onChange={handleChange} required className="w-full bg-background/50 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-colors text-base" placeholder="Project Inquiry" />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-foreground/70 mb-2">Message</label>
-                <textarea name="message" value={formData.message} onChange={handleChange} required rows="4" className="w-full bg-background/50 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-colors resize-none" placeholder="Tell me about your project..."></textarea>
+                <label htmlFor="contact-message" className="block text-sm font-medium text-foreground/70 mb-2">Message</label>
+                <textarea id="contact-message" name="message" value={formData.message} onChange={handleChange} required rows="4" className="w-full bg-background/50 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-colors resize-none text-base" placeholder="Tell me about your project..."></textarea>
               </div>
 
-              <button type="submit" className="w-full py-4 rounded-xl bg-primary text-background font-bold text-lg hover:bg-emerald-400 transition-all flex items-center justify-center gap-2 hover:scale-[1.02]">
+              <button type="submit" className="w-full py-3.5 sm:py-4 rounded-xl bg-primary text-background font-bold text-base sm:text-lg hover:bg-emerald-400 transition-all flex items-center justify-center gap-2 hover:scale-[1.02]">
                 Send Message <Send size={20} />
               </button>
             </form>

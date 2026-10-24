@@ -1,6 +1,6 @@
 # Abdullahi Ibrahim (Abdullahi-Ai) — Professional Portfolio
 
-**Live Site:** [https://my-personal-portfolio-delta-one.vercel.app/](https://my-personal-portfolio-delta-one.vercel.app/)
+**Live Site:** [https://www.abdullahiibrahim.co.ke/](https://www.abdullahiibrahim.co.ke/)
 
 **GitHub:** [github.com/Abdullahi-Ai](https://github.com/Abdullahi-Ai)
 
@@ -8,12 +8,12 @@
 
 ## About
 
-Professional portfolio of **Abdullahi Ibrahim**, also known as **Abdullahi-Ai** — a software developer building web applications and exploring artificial intelligence, AI agents, and automation.
+Abdullahi Ibrahim (Abdullahi-Ai) is a software developer focused on building modern web applications and AI-powered solutions.
 
 ### Education
 
-- **University of Nairobi** — Double major in Sociology and Psychology
-- **Certificate in Software Development** — Moringa School (Full Stack Web Development &amp; UI/UX)
+- **Bachelor of Arts in Social Sciences** — specializing in Sociology and Psychology, University of Nairobi
+- **Certificate in Software Development** — Moringa School (Full Stack Web Development & UI/UX)
 
 ### Professional Interests
 
@@ -50,6 +50,9 @@ Professional portfolio of **Abdullahi Ibrahim**, also known as **Abdullahi-Ai** 
 
 | Project | Description | Tech |
 |---------|-------------|------|
+| [Osman AI Shopping Assistant](https://github.com/Abdullahi-Ai/osman-accessories-ai) | RAG-powered e-commerce shopping assistant | Python, FastAPI, LangChain, ChromaDB, React |
+| SchoolPOS Pro | School management and Point of Sale (POS) desktop system | React, JavaScript, PostgreSQL, Electron |
+| [Osman Travel Tours](https://github.com/Abdullahi-Ai/phase-4-project-osman-travel-tours) | Full-stack safari tour booking web application | React, Python, Flask, SQLAlchemy |
 | [Health Psychology Hospital](https://abdullahi-ai.github.io/health-psychology-Hospital) | Healthcare website with patient-centered UX | React, Tailwind CSS |
 | [LuqmanTech Portfolio](https://luqmantech.vercel.app/) | Modern tech portfolio with animations | React, Tailwind CSS, Framer Motion |
 | [Al-Yaqin Education Centre](https://al-yaqin-education-centre-ggvu.vercel.app/) | Islamic educational institution website | React, Tailwind CSS |
@@ -93,4 +96,4 @@ This portfolio includes:
 
 ---
 
-*Built by Abdullahi Ibrahim (Abdullahi-Ai) — Software Developer & AI Enthusiast*
+*Built by Abdullahi Ibrahim (Abdullahi-Ai) — Software Developer*

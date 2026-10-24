@@ -1,7 +1,7 @@
 # robots.txt for Abdullahi Ibrahim Portfolio
-# https://my-personal-portfolio-delta-one.vercel.app/
+# https://www.abdullahiibrahim.co.ke/
 
 User-agent: *
 Allow: /
 
-Sitemap: https://my-personal-portfolio-delta-one.vercel.app/sitemap.xml
+Sitemap: https://www.abdullahiibrahim.co.ke/sitemap.xml

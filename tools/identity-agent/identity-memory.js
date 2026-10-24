@@ -2,15 +2,16 @@
 export const identity = {
   name: "Abdullahi Ibrahim",
   alternateName: "Abdullahi-Ai",
-  professionalTitle: "Software Developer (AI & automation enthusiast)",
+  professionalTitle: "Software Developer",
   
   website: {
-    url: "https://my-personal-portfolio-delta-one.vercel.app/",
+    url: "https://www.abdullahiibrahim.co.ke/",
+    vercelAlias: "https://my-personal-portfolio-delta-one.vercel.app/",
     platform: "Vercel",
     framework: "React 19 + Vite 8 + Tailwind CSS 3",
     repository: "https://github.com/Abdullahi-Ai/my-personal-portfolio",
     verified: true,
-    verifiedDate: "2026-10-23",
+    verifiedDate: "2026-10-24",
   },
 
   // Only profiles with verified === true may appear in JSON-LD sameAs.
@@ -45,20 +46,16 @@ export const identity = {
   education: [
     {
       institution: "University of Nairobi",
-      fieldsOfStudy: ["Sociology", "Psychology"],
-      structure: "Double major",
-      // Graduation status, degree title and dates are NOT confirmed by the owner, so the site and
-      // structured data must not state them. Do not add alumniOf until graduation is confirmed.
-      graduationStatus: "unconfirmed",
+      degree: "Bachelor of Arts in Social Sciences",
+      specialization: "Sociology and Psychology",
       verified: true,
       verifiedDate: "2026-10-24",
-      source: "Owner instruction (2026-10-24): double major in Sociology and Psychology",
+      source: "Owner instruction (2026-10-24): Bachelor of Arts in Social Sciences, specializing in Sociology and Psychology, University of Nairobi",
     },
     {
       institution: "Moringa School",
       certification: "Certificate in Software Development",
       focus: "Full Stack Web Development & UI/UX",
-      year: "2025",
       verified: true,
       verifiedDate: "2026-10-23",
       source: "Education.jsx and About.jsx components (existing site content)",
@@ -67,25 +64,25 @@ export const identity = {
 
   interests: [
     "Software Development",
+    "Web Application Development",
     "Artificial Intelligence",
-    "Agentic AI",
     "AI Agents",
     "AI Automation",
-    "Web Application Development",
     "UI/UX Design",
   ],
 
-  // Confirmed by package.json / source in the owner's repositories (checked 2026-10-24):
-  technologies: ["React", "Tailwind CSS", "JavaScript", "Framer Motion", "Vite", "Python", "FastAPI", "LangChain", "ChromaDB", "GitHub"],
-  // Listed on the site's Tech Stack section but NOT found in any inspected repository. Awaiting owner confirmation:
-  technologiesUnconfirmed: ["Node.js", "Express", "MongoDB", "Firebase", "Figma"],
+  // Confirmed by package.json / requirements.txt / source in the owner's repositories (checked 2026-10-24):
+  technologies: ["React", "JavaScript", "Python", "Flask", "FastAPI", "PostgreSQL", "Tailwind CSS", "GitHub"],
+  // Mentioned by owner or previous site but not verified in inspected repositories:
+  technologiesUnconfirmed: ["MongoDB", "Firebase"],
 
   contact: {
+    phone: "0781764187",
     email: "osmannoor75200@gmail.com",
     whatsapp: "+254781764187",
-    verified: false,
-    status: "needs_user_verification",
-    source: "Contact.jsx component. Email local-part uses 'osmannoor', unlike the preferred name. Kept on the site for owner review; not used in structured data.",
+    verified: true,
+    verifiedDate: "2026-10-24",
+    source: "Owner confirmed contact number 0781764187; email retained from Contact.jsx.",
   },
 
   projects: [
@@ -96,11 +93,24 @@ export const identity = {
       githubUrl: "https://github.com/Abdullahi-Ai/osman-accessories-ai",
       status: "prototype",
       verifiedDate: "2026-10-24",
-      // Confirmed from source (README.md, src/app.py, src/vectordb.py, src/api.py, evaluate_retrieval.py):
-      // FastAPI endpoints /api/chat and /api/health; ChromaDB PersistentClient; all-MiniLM-L6-v2 embeddings;
-      // chunk size 500 / overlap 100; top-k 3; distance threshold 1.30; LLM selectable (OpenAI, Groq, Gemini).
-      // Not confirmed: a public live demo, production use, or measured accuracy (evaluation results not run here).
-      // Repository hygiene: src/__pycache__, backend.log and several scratch files are tracked in git.
+      liveUrl: null,
+    },
+    {
+      name: "SchoolPOS Pro",
+      description: "School management and Point of Sale (POS) desktop application",
+      tech: ["React", "JavaScript", "PostgreSQL", "Electron"],
+      githubUrl: null,
+      status: "completed",
+      verifiedDate: "2026-10-24",
+      liveUrl: null,
+    },
+    {
+      name: "Osman Travel Tours",
+      description: "Full-stack safari tour booking web application (React + Flask)",
+      tech: ["React", "Python", "Flask", "SQLAlchemy"],
+      githubUrl: "https://github.com/Abdullahi-Ai/phase-4-project-osman-travel-tours",
+      status: "completed",
+      verifiedDate: "2026-10-24",
       liveUrl: null,
     },
     {
@@ -161,10 +171,10 @@ export const identity = {
       name: "Personal Portfolio",
       description: "Professional portfolio with SEO optimization and structured data",
       tech: ["React", "Vite", "Tailwind CSS", "Framer Motion", "GSAP"],
-      liveUrl: "https://my-personal-portfolio-delta-one.vercel.app/",
+      liveUrl: "https://www.abdullahiibrahim.co.ke/",
       githubUrl: "https://github.com/Abdullahi-Ai/my-personal-portfolio",
       status: "active",
-      verifiedDate: "2026-10-23",
+      verifiedDate: "2026-10-24",
     },
   ],
 

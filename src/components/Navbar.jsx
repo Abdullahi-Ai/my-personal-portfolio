@@ -46,7 +46,7 @@ const Navbar = () => {
         isScrolled && !isMobileMenuOpen ? 'bg-background/80 backdrop-blur-md border-b border-white/10 py-4' : 'bg-transparent py-6'
       }`}
     >
-      <div className="container mx-auto px-6 lg:px-12 flex items-center justify-between">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between">
         <a
           href="#"
           onClick={(e) => {
@@ -55,16 +55,17 @@ const Navbar = () => {
             window.history.replaceState('', document.title, window.location.pathname);
           }}
           className="flex items-center gap-2 group relative z-[60]"
+          aria-label="Abdullahi Ibrahim Home"
         >
           <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary to-emerald-400 flex items-center justify-center text-background font-bold text-xl group-hover:scale-105 transition-transform">
             <Code2 size={24} />
           </div>
-          <span className="font-bold text-xl tracking-tight hidden sm:block text-foreground">
+          <span className="font-bold text-lg sm:text-xl tracking-tight text-foreground">
             Abdullahi<span className="text-primary">.AI</span>
           </span>
         </a>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-6 xl:gap-8" aria-label="Main navigation">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -76,7 +77,7 @@ const Navbar = () => {
                   window.history.replaceState('', document.title, window.location.pathname);
                 }
               }}
-              className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+              className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors py-1"
             >
               {link.name}
             </a>
@@ -90,8 +91,10 @@ const Navbar = () => {
         </nav>
 
         <button
-          className="md:hidden text-foreground p-2 relative z-[60]"
+          className="lg:hidden text-foreground p-2.5 relative z-[60] rounded-xl hover:bg-white/5 transition-colors"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label={isMobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+          aria-expanded={isMobileMenuOpen}
         >
           {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
@@ -103,49 +106,39 @@ const Navbar = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[55] bg-background flex flex-col p-8 md:hidden overflow-y-auto"
+            className="fixed inset-0 z-[55] bg-background flex flex-col px-6 py-8 sm:p-8 lg:hidden overflow-y-auto"
           >
-            <div className="flex flex-col gap-6 mt-16">
+            <div className="flex flex-col gap-4 sm:gap-6 mt-16">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
                   onClick={(e) => handleMobileLinkClick(e, link.href)}
-                  className="text-2xl font-bold text-foreground/90 hover:text-primary border-b border-white/5 pb-4 transition-colors"
+                  className="text-xl sm:text-2xl font-bold text-foreground/90 hover:text-primary border-b border-white/5 pb-3 sm:pb-4 transition-colors"
                 >
                   {link.name}
                 </a>
               ))}
             </div>
 
-            <div className="flex flex-col gap-4 mt-12">
+            <div className="flex flex-col gap-3 mt-8 sm:mt-12">
+              <a
+                href="#portfolio"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="w-full py-3.5 sm:py-4 rounded-2xl bg-primary text-background font-bold text-base sm:text-lg text-center flex items-center justify-center gap-2 hover:bg-emerald-400 transition-all"
+              >
+                View My Work
+              </a>
               <a
                 href="#contact"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="w-full py-4 rounded-2xl bg-primary text-background font-bold text-lg text-center hover:bg-emerald-400 transition-all"
+                className="w-full py-3.5 sm:py-4 rounded-2xl glass-card text-foreground font-bold text-base sm:text-lg text-center border border-white/10 hover:bg-white/10 transition-all"
               >
-                Let's Talk
+                Contact Me
               </a>
-              
-              <div className="flex flex-col gap-3 mt-4">
-                <a
-                  href="#portfolio"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="w-full py-4 rounded-2xl bg-emerald-500 text-background font-bold text-lg text-center flex items-center justify-center gap-2"
-                >
-                  View My Work
-                </a>
-                <a
-                  href="#contact"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="w-full py-4 rounded-2xl glass-card text-foreground font-bold text-lg text-center border border-white/10"
-                >
-                  Hire Me
-                </a>
-              </div>
             </div>
 
-            <div className="flex justify-center gap-8 text-sm text-foreground/40 mt-12 pb-8">
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-8 text-xs sm:text-sm text-foreground/50 mt-auto pt-8 pb-4">
               <div className="flex flex-col items-center gap-1">
                 <div className="w-1.5 h-1.5 rounded-full bg-primary mb-1" />
                 Web Development
