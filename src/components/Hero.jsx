@@ -49,7 +49,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight"
           >
-            Hi, I'm <span className="text-gradient-primary">Abdullahi Ibrahim</span>
+            Hi, I'm <span className="text-gradient-primary">Abdullahi Ibrahim (Osman)</span>
             <div className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mt-3 text-foreground/90 min-h-[1.5em] flex items-center justify-center overflow-hidden px-2">
               <AnimatePresence mode="wait">
                 <motion.span
@@ -72,7 +72,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-base sm:text-lg md:text-xl text-foreground/70 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed px-2"
           >
-            Abdullahi Ibrahim is a software developer focused on building modern web applications and AI-powered solutions.
+            Abdullahi Ibrahim (Osman) is a software developer based in Kenya who builds web applications and AI-powered solutions.
           </motion.p>
 
           <motion.div

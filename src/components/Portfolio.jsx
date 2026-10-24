@@ -26,14 +26,6 @@ const Portfolio = () => {
       image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80',
     },
     {
-      title: 'Osman Travel Tours',
-      category: 'Web Application',
-      desc: 'A full-stack safari tour booking web application featuring user authentication, tour browsing and booking, customer reviews, and an admin management dashboard.',
-      tech: ['React', 'Python', 'Flask', 'SQLAlchemy'],
-      githubUrl: 'https://github.com/Abdullahi-Ai/phase-4-project-osman-travel-tours',
-      image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80',
-    },
-    {
       title: 'Health Psychology Hospital',
       category: 'Web Application',
       desc: 'A healthcare and psychology-focused hospital website with responsive medical layouts and a patient-centered user interface.',

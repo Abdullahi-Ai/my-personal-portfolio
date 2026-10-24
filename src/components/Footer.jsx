@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
 
           <div className="text-xs sm:text-sm text-foreground/50 text-center">
-            © {new Date().getFullYear()} Abdullahi Ibrahim (Abdullahi-Ai). All rights reserved.
+            © {new Date().getFullYear()} Abdullahi Ibrahim (Osman). All rights reserved.
           </div>
 
         </div>

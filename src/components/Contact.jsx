@@ -57,7 +57,7 @@ const Contact = () => {
               Let’s Build Something <br className="hidden sm:inline"/><span className="text-gradient-primary">Together</span>
             </h2>
             <p className="text-foreground/70 text-base sm:text-lg mb-8 sm:mb-10">
-              Reach out to discuss web development, software applications, or AI-powered projects.
+              Based in Kenya — reach out to discuss web development, software applications, or AI-powered projects.
             </p>
 
             <div className="space-y-4">
@@ -93,13 +93,13 @@ const Contact = () => {
             </div>
 
             <div className="flex gap-4 mt-8 sm:mt-10">
-              <a href="https://instagram.com/osmanibrahim5181" target="_blank" rel="noopener noreferrer" aria-label="Follow Abdullahi Ibrahim on Instagram" className="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:text-primary transition-colors hover:-translate-y-1">
+              <a href="https://instagram.com/osmanibrahim5181" target="_blank" rel="noopener noreferrer" aria-label="Follow Abdullahi Ibrahim (Osman) on Instagram" className="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:text-primary transition-colors hover:-translate-y-1">
                 <InstagramIcon />
               </a>
-              <a href="https://www.linkedin.com/in/osman-noor-08a297358" target="_blank" rel="noopener noreferrer" aria-label="Connect with Abdullahi Ibrahim on LinkedIn" className="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:text-primary transition-colors hover:-translate-y-1">
+              <a href="https://www.linkedin.com/in/osman-noor-08a297358" target="_blank" rel="noopener noreferrer" aria-label="Connect with Abdullahi Ibrahim (Osman) on LinkedIn" className="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:text-primary transition-colors hover:-translate-y-1">
                 <LinkedinIcon />
               </a>
-              <a href="https://github.com/Abdullahi-Ai" target="_blank" rel="noopener noreferrer" aria-label="View Abdullahi Ibrahim's projects on GitHub" className="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:text-primary transition-colors hover:-translate-y-1">
+              <a href="https://github.com/Abdullahi-Ai" target="_blank" rel="noopener noreferrer" aria-label="View Abdullahi Ibrahim (Osman)'s projects on GitHub" className="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:text-primary transition-colors hover:-translate-y-1">
                 <GithubIcon />
               </a>
             </div>

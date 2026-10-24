@@ -27,7 +27,7 @@ const InstagramIcon = () => (
 const About = () => {
   // Figures below are counted from the Featured Projects section and the Education section.
   const stats = [
-    { label: 'Featured Projects', value: '9', icon: Code },
+    { label: 'Featured Projects', value: '8', icon: Code },
     { label: 'Live Demos', value: '6', icon: Users },
     { label: 'AI / RAG Project', value: '1', icon: Lightbulb },
     { label: 'Education & Certifications', value: '2', icon: BarChart },
@@ -52,7 +52,7 @@ const About = () => {
               transition={{ repeat: Infinity, duration: 5, ease: 'easeInOut' }}
               className="relative rounded-3xl overflow-hidden glass-card border border-white/10 aspect-[4/5] max-w-xs sm:max-w-md mx-auto shadow-[0_0_35px_rgba(16,185,129,0.2)]"
             >
-              <img src={myImage} alt="Abdullahi Ibrahim, Software Developer" loading="lazy" className="w-full h-full object-cover" />
+              <img src={myImage} alt="Abdullahi Ibrahim (Osman), Software Developer in Kenya" loading="lazy" className="w-full h-full object-cover" />
             </motion.div>
           </motion.div>
 
@@ -64,12 +64,12 @@ const About = () => {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
-              About <span className="text-gradient-primary">Abdullahi Ibrahim</span>
+              About <span className="text-gradient-primary">Abdullahi Ibrahim (Osman)</span>
             </h2>
             
             <div className="space-y-4 text-foreground/80 text-base sm:text-lg leading-relaxed mb-8">
               <p>
-                <strong className="text-foreground">Abdullahi Ibrahim</strong> (<strong className="text-foreground">Abdullahi-Ai</strong>) is a software developer focused on building modern web applications and AI-powered solutions.
+                <strong className="text-foreground">Abdullahi Ibrahim (Osman)</strong>, also known as <strong className="text-foreground">Abdullahi-Ai</strong>, is a software developer based in Kenya who builds web applications and AI-powered solutions.
               </p>
               <p>
                 He studied a <strong>Bachelor of Arts in Social Sciences</strong>, specializing in <strong>Sociology and Psychology</strong> at the <strong>University of Nairobi</strong>, alongside software development training at <strong>Moringa School</strong>. Explore his <a href="#portfolio" className="text-primary hover:underline">projects</a>, <a href="#education" className="text-primary hover:underline">education</a>, or <a href="#contact" className="text-primary hover:underline">get in touch</a>.
@@ -83,7 +83,7 @@ const About = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full glass-card hover:border-primary/50 text-foreground/90 hover:text-primary transition-all text-sm font-medium"
-                aria-label="Connect with Abdullahi Ibrahim on LinkedIn"
+                aria-label="Connect with Abdullahi Ibrahim (Osman) on LinkedIn"
               >
                 <LinkedinIcon /> LinkedIn
               </a>
@@ -92,7 +92,7 @@ const About = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full glass-card hover:border-primary/50 text-foreground/90 hover:text-primary transition-all text-sm font-medium"
-                aria-label="Follow Abdullahi Ibrahim on Instagram"
+                aria-label="Follow Abdullahi Ibrahim (Osman) on Instagram"
               >
                 <InstagramIcon /> @osmanibrahim5181
               </a>
@@ -101,7 +101,7 @@ const About = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full glass-card hover:border-primary/50 text-foreground/90 hover:text-primary transition-all text-sm font-medium"
-                aria-label="View Abdullahi Ibrahim's GitHub"
+                aria-label="View Abdullahi Ibrahim (Osman)'s GitHub"
               >
                 <GithubIcon /> GitHub
               </a>

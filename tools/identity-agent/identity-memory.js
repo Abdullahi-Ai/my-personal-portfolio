@@ -1,8 +1,9 @@
 
 export const identity = {
-  name: "Abdullahi Ibrahim",
+  name: "Abdullahi Ibrahim (Osman)",
   alternateName: "Abdullahi-Ai",
   professionalTitle: "Software Developer",
+  location: "Kenya",
   
   website: {
     url: "https://www.abdullahiibrahim.co.ke/",
@@ -28,17 +29,16 @@ export const identity = {
     {
       platform: "LinkedIn",
       url: "https://www.linkedin.com/in/osman-noor-08a297358",
-      verified: false,
-      status: "needs_user_verification",
-      source: "Linked from Contact.jsx/About.jsx. URL slug and presumably the display name use 'Osman Noor', not 'Abdullahi Ibrahim'. LinkedIn blocks automated checks (HTTP 999), so ownership and display name are unconfirmed.",
-      action: "Owner to rename the profile/custom URL to match 'Abdullahi Ibrahim', then confirm so it can be added to sameAs.",
+      verified: true,
+      verifiedDate: "2026-10-24",
+      source: "Confirmed by owner under the unified identity 'Abdullahi Ibrahim (Osman)' for inclusion in JSON-LD sameAs.",
     },
     {
       platform: "Instagram",
       url: "https://instagram.com/osmanibrahim5181",
       verified: false,
       status: "needs_user_verification",
-      source: "Linked from Contact.jsx/About.jsx. Handle does not contain 'Abdullahi'. Not inspected.",
+      source: "Linked from Contact.jsx/About.jsx. Retained on site for owner review; excluded from JSON-LD sameAs.",
       action: "Owner to confirm it is a professional account, or remove it from the site.",
     },
   ],
@@ -100,15 +100,6 @@ export const identity = {
       description: "School management and Point of Sale (POS) desktop application",
       tech: ["React", "JavaScript", "PostgreSQL", "Electron"],
       githubUrl: null,
-      status: "completed",
-      verifiedDate: "2026-10-24",
-      liveUrl: null,
-    },
-    {
-      name: "Osman Travel Tours",
-      description: "Full-stack safari tour booking web application (React + Flask)",
-      tech: ["React", "Python", "Flask", "SQLAlchemy"],
-      githubUrl: "https://github.com/Abdullahi-Ai/phase-4-project-osman-travel-tours",
       status: "completed",
       verifiedDate: "2026-10-24",
       liveUrl: null,

@@ -1,4 +1,4 @@
-# Abdullahi Ibrahim (Abdullahi-Ai) — Professional Portfolio
+# Abdullahi Ibrahim (Osman) — Professional Portfolio
 
 **Live Site:** [https://www.abdullahiibrahim.co.ke/](https://www.abdullahiibrahim.co.ke/)
 
@@ -8,7 +8,7 @@
 
 ## About
 
-Abdullahi Ibrahim (Abdullahi-Ai) is a software developer focused on building modern web applications and AI-powered solutions.
+Abdullahi Ibrahim (Osman), also known as Abdullahi-Ai, is a software developer based in Kenya who builds web applications and AI-powered solutions.
 
 ### Education
 
@@ -52,7 +52,6 @@ Abdullahi Ibrahim (Abdullahi-Ai) is a software developer focused on building mod
 |---------|-------------|------|
 | [Osman AI Shopping Assistant](https://github.com/Abdullahi-Ai/osman-accessories-ai) | RAG-powered e-commerce shopping assistant | Python, FastAPI, LangChain, ChromaDB, React |
 | SchoolPOS Pro | School management and Point of Sale (POS) desktop system | React, JavaScript, PostgreSQL, Electron |
-| [Osman Travel Tours](https://github.com/Abdullahi-Ai/phase-4-project-osman-travel-tours) | Full-stack safari tour booking web application | React, Python, Flask, SQLAlchemy |
 | [Health Psychology Hospital](https://abdullahi-ai.github.io/health-psychology-Hospital) | Healthcare website with patient-centered UX | React, Tailwind CSS |
 | [LuqmanTech Portfolio](https://luqmantech.vercel.app/) | Modern tech portfolio with animations | React, Tailwind CSS, Framer Motion |
 | [Al-Yaqin Education Centre](https://al-yaqin-education-centre-ggvu.vercel.app/) | Islamic educational institution website | React, Tailwind CSS |
@@ -90,10 +89,10 @@ This portfolio includes:
 
 - **Email**: osmannoor75200@gmail.com
 - **GitHub**: [Abdullahi-Ai](https://github.com/Abdullahi-Ai)
-- **LinkedIn**: [Abdullahi Ibrahim](https://www.linkedin.com/in/osman-noor-08a297358)
+- **LinkedIn**: [Abdullahi Ibrahim (Osman)](https://www.linkedin.com/in/osman-noor-08a297358)
 - **Instagram**: [@osmanibrahim5181](https://instagram.com/osmanibrahim5181)
 - **WhatsApp**: [0781764187](https://wa.me/254781764187)
 
 ---
 
-*Built by Abdullahi Ibrahim (Abdullahi-Ai) — Software Developer*
+*Built by Abdullahi Ibrahim (Osman) — Software Developer in Kenya*
