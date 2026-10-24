@@ -1,16 +1,17 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Layout, Globe, Smartphone, Palette, Code2, ShoppingCart, HeartHandshake, PenTool } from 'lucide-react';
+import { Layout, Globe, Smartphone, Palette, Code2, ShoppingCart, HeartHandshake, PenTool, Bot, Workflow } from 'lucide-react';
 
 const Services = () => {
   const services = [
-    { icon: Globe, title: 'Business Websites', desc: 'Premium, high-converting websites that establish brand authority and drive growth.' },
+    { icon: Globe, title: 'Business Websites', desc: 'Professional, responsive business websites that present your brand clearly.' },
+    { icon: Bot, title: 'AI & Agentic AI Solutions', desc: 'Intelligent AI agents, automation systems, and AI-powered applications that streamline workflows and solve real problems.' },
     { icon: HeartHandshake, title: 'NGO & Charity Websites', desc: 'Trust-building platforms for organizations to showcase impact and receive donations.' },
     { icon: Layout, title: 'Landing Pages', desc: 'Focused, conversion-optimized landing pages for marketing campaigns and product launches.' },
-    { icon: ShoppingCart, title: 'E-commerce Solutions', desc: 'Modern online stores with seamless shopping experiences and secure checkout flows.' },
+    { icon: Workflow, title: 'AI Automation', desc: 'Automated workflows using AI agents and modern tools to improve efficiency and reduce manual work.' },
     { icon: Palette, title: 'UI/UX Design', desc: 'Human-centered, psychologically driven interface designs that users love.' },
     { icon: Code2, title: 'Full Stack Development', desc: 'Robust, scalable, and secure web applications built with modern technologies.' },
     { icon: Smartphone, title: 'Responsive Design', desc: 'Flawless experiences across all devices, from mobile phones to large desktop screens.' },
+    { icon: ShoppingCart, title: 'E-commerce Solutions', desc: 'Modern online stores with seamless shopping experiences and secure checkout flows.' },
     { icon: PenTool, title: 'Website Redesign', desc: 'Transforming outdated websites into modern, premium digital experiences.' },
   ];
 
@@ -35,11 +36,11 @@ const Services = () => {
             transition={{ delay: 0.1 }}
             className="text-foreground/70 max-w-2xl mx-auto"
           >
-            Comprehensive web solutions tailored for modern businesses, organizations, and brands.
+            Comprehensive web and AI solutions tailored for modern businesses, organizations, and brands.
           </motion.p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
           {services.map((service, idx) => (
             <motion.div
               key={idx}

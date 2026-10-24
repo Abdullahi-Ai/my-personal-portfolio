@@ -1,0 +1,17 @@
+{
+  "name": "abdullahi-ai-identity-agent",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Agentic AI Identity Research Assistant for Abdullahi Ibrahim (Abdullahi-Ai)",
+  "scripts": {
+    "audit": "node audit-site.js",
+    "check-links": "node check-links.js",
+    "validate-seo": "node validate-seo.js",
+    "report": "node generate-report.js",
+    "monitor": "node monitor.js",
+    "live-check": "node live-check.js",
+    "all": "node validate-seo.js && node check-links.js --local-only && node monitor.js"
+  },
+  "dependencies": {}
+}

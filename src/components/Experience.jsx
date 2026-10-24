@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
 const Experience = () => {
@@ -6,7 +5,7 @@ const Experience = () => {
     {
       year: '2022 - 2026',
       title: 'Graduation from University of Nairobi',
-      desc: 'Earned Bachelor of Arts and Social Sciences, specializing in Sociology & Psychology. Developed a deep understanding of human behavior and user psychology.',
+      desc: 'Earned Bachelor of Arts and Social Sciences, Double Major in Sociology & Psychology. Developed a deep understanding of human behavior, user cognition, and social dynamics.',
       align: 'left',
     },
     {
@@ -16,15 +15,15 @@ const Experience = () => {
       align: 'right',
     },
     {
-      year: '2024',
+      year: '2024 - 2025',
       title: 'Freelance & Modern Branding Growth',
       desc: 'Began freelance development, focusing on modern UI/UX, responsive layouts, and business-centric digital branding. Built projects like Health Psychology Hospital and Zamanijets.',
       align: 'left',
     },
     {
       year: 'Present',
-      title: 'Professional Web Developer',
-      desc: 'Specializing in premium business and NGO websites. Delivering high-end agency-level quality and human-centered web experiences for a global clientele.',
+      title: 'Software Developer & AI Developer',
+      desc: 'Specializing in premium business websites, AI-powered applications, and agentic AI systems. Exploring AI agents, automation, and intelligent software solutions while delivering high-end web experiences.',
       align: 'right',
     },
   ];
@@ -41,7 +40,7 @@ const Experience = () => {
           >
             My <span className="text-gradient-primary">Journey</span>
           </motion.h2>
-          <p className="text-foreground/70 max-w-2xl mx-auto">From understanding human behavior to building digital experiences that connect with them.</p>
+          <p className="text-foreground/70 max-w-2xl mx-auto">From understanding human behavior to building web applications and AI-powered solutions.</p>
         </div>
 
         <div className="max-w-4xl mx-auto relative">

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Code2 } from 'lucide-react';
 
 const Footer = () => {
@@ -29,7 +28,7 @@ const Footer = () => {
           </div>
 
           <div className="text-sm text-foreground/40">
-            © {new Date().getFullYear()} Abdullahi Ibrahim. All rights reserved.
+            © {new Date().getFullYear()} Abdullahi Ibrahim (Abdullahi-Ai). All rights reserved.
           </div>
 
         </div>

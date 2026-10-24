@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 
@@ -11,10 +10,19 @@ const GithubIcon = () => (
 const Portfolio = () => {
   const projects = [
     {
+      title: 'Osman AI Shopping Assistant',
+      status: 'Prototype / portfolio project',
+      desc: 'A RAG-based shopping assistant for an electronics store. A React storefront calls a FastAPI backend that retrieves store knowledge from ChromaDB (sentence-transformers embeddings), builds a prompt with LangChain and answers with a configurable LLM (Groq, Gemini or OpenAI). Includes a retrieval evaluation script.',
+      tech: ['Python', 'FastAPI', 'LangChain', 'ChromaDB', 'React'],
+      githubUrl: 'https://github.com/Abdullahi-Ai/osman-accessories-ai',
+      image: '/osman-ai.png',
+    },
+    {
       title: 'Health Psychology Hospital',
       desc: 'A modern healthcare and psychology-focused hospital website with professional medical UI, responsive layouts, premium sections, and patient-centered user experience.',
       tech: ['React', 'Tailwind CSS', 'JavaScript'],
       liveUrl: 'https://abdullahi-ai.github.io/health-psychology-Hospital',
+      githubUrl: 'https://github.com/Abdullahi-Ai/health-psychology-Hospital',
       image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80',
     },
     {
@@ -22,6 +30,7 @@ const Portfolio = () => {
       desc: 'A sleek modern technology portfolio website showcasing premium frontend design, animations, smooth layouts, and modern branding aesthetics.',
       tech: ['React', 'Tailwind CSS', 'Framer Motion'],
       liveUrl: 'https://luqmantech.vercel.app/',
+      githubUrl: 'https://github.com/Abdullahi-Ai/luqmantech',
       image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80',
     },
     {
@@ -29,6 +38,7 @@ const Portfolio = () => {
       desc: 'An elegant Islamic educational institution website focused on Quran learning, modern education systems, Islamic branding, and responsive school presentation.',
       tech: ['React', 'Tailwind CSS'],
       liveUrl: 'https://al-yaqin-education-centre-ggvu.vercel.app/',
+      githubUrl: 'https://github.com/Abdullahi-Ai/AL-yaqin-Education-center',
       image: 'https://images.unsplash.com/photo-1584697964400-2af6a2f6204c?auto=format&fit=crop&w=800&q=80',
     },
     {
@@ -36,6 +46,7 @@ const Portfolio = () => {
       desc: 'A premium digital agency and branding website built for marketing, business growth, and modern online presence.',
       tech: ['React', 'Tailwind CSS', 'JavaScript'],
       liveUrl: 'https://mambsa-group-agency.vercel.app/',
+      githubUrl: 'https://github.com/Abdullahi-Ai/Mambsa-Group-Agency',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
     },
     {
@@ -43,13 +54,14 @@ const Portfolio = () => {
       desc: 'A luxurious airline booking web application featuring premium flight search functionality, seat selection systems, modern booking flow, glassmorphism UI.',
       tech: ['Vite', 'Tailwind CSS', 'JavaScript'],
       liveUrl: 'https://zamanjets.vercel.app/',
-      image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80',
+            image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80',
     },
     {
       title: 'Mumtaaz Girls High School',
       desc: 'A modern academic institution website designed with elegant educational presentation, admissions information, responsive layouts, and student-centered design experience.',
       tech: ['React', 'Tailwind CSS'],
       liveUrl: 'https://mumtaaz-girls-high-school.vercel.app/',
+      githubUrl: 'https://github.com/Abdullahi-Ai/Mumtaaz-Girls-High-school-',
       image: '/mumtaaz.png',
     },
     {
@@ -57,6 +69,7 @@ const Portfolio = () => {
       desc: 'A premium Islamic humanitarian NGO platform focused on orphan support, community outreach, clean water projects, zakah distribution, and humanitarian services.',
       tech: ['React', 'Tailwind CSS', 'Framer Motion'],
       liveUrl: 'https://the-light-of-peace.vercel.app/',
+      githubUrl: 'https://github.com/Abdullahi-Ai/THE-LIGHT-OF-PEACE',
       image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80',
     },
   ];
@@ -80,7 +93,7 @@ const Portfolio = () => {
             transition={{ delay: 0.1 }}
             className="text-foreground/70 max-w-2xl mx-auto"
           >
-            A selection of premium, real-world digital experiences designed and developed to deliver measurable results.
+            A selection of websites and applications I have built. Each links to its live demo and, where the repository is public, its source code.
           </motion.p>
         </div>
 
@@ -117,11 +130,15 @@ const Portfolio = () => {
                 </div>
                 
                 <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">{project.title}</h3>
+                {project.status && (
+                  <p className="text-xs uppercase tracking-wider text-foreground/50 mb-3">{project.status}</p>
+                )}
                 <p className="text-foreground/70 text-sm leading-relaxed mb-6 flex-1">
                   {project.desc}
                 </p>
                 
                 <div className="flex items-center gap-4 pt-4 border-t border-white/10 mt-auto">
+                  {project.liveUrl && (
                   <a
                     href={project.liveUrl}
                     target="_blank"
@@ -130,13 +147,18 @@ const Portfolio = () => {
                   >
                     <ExternalLink size={16} /> Live Site
                   </a>
+                  )}
+                  {project.githubUrl && (
                   <a
-                    href="#"
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-2.5 rounded-lg bg-white/5 hover:bg-white/10 text-foreground transition-all border border-white/5"
-                    title="View Source"
+                    title={`View ${project.title} source code on GitHub`}
                   >
                     <GithubIcon />
                   </a>
+                  )}
                 </div>
               </div>
             </motion.div>

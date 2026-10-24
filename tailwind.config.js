@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
@@ -10,7 +9,7 @@ export default {
         background: '#0a0a0a',
         foreground: '#f5f5f5',
         primary: {
-          DEFAULT: '#10b981', // emerald green
+          DEFAULT: '#10b981',
           dark: '#047857',
         },
         gold: '#fbbf24',

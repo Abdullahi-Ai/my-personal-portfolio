@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { X, Code2, ArrowRight } from 'lucide-react';
+import { X, Code2 } from 'lucide-react';
 
 const WelcomeOverlay = ({ onEnter }) => {
   const navLinks = [

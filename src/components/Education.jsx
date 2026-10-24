@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { GraduationCap, Award, BookOpen, Brain } from 'lucide-react';
 
@@ -45,11 +44,14 @@ const Education = () => {
             
             <span className="text-sm font-semibold text-primary tracking-wider uppercase mb-2 block">University Degree</span>
             <h3 className="text-2xl font-bold mb-2">University of Nairobi</h3>
-            <p className="text-xl text-foreground/90 mb-4 font-medium">Bachelor of Arts and Social Sciences</p>
+            <p className="text-xl text-foreground/90 mb-3 font-medium">Bachelor of Arts and Social Sciences</p>
+            <div className="inline-block px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-semibold uppercase tracking-wider mb-4">
+              Double Major: Sociology &amp; Psychology
+            </div>
             
             <div className="flex items-center gap-3 text-foreground/70 bg-black/20 p-4 rounded-xl border border-white/5">
-              <Brain size={20} className="text-primary" />
-              <span>Specialized in <strong>Sociology and Psychology</strong></span>
+              <Brain size={20} className="text-primary shrink-0" />
+              <span>Double Major in <strong>Sociology and Psychology</strong> — understanding human behavior, social structures, and cognition</span>
             </div>
           </motion.div>
 

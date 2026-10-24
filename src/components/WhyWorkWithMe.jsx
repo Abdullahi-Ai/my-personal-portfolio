@@ -1,14 +1,13 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { CheckCircle2, Zap, Layout, Search, Brain, MessageSquare } from 'lucide-react';
+import { CheckCircle2, Zap, Layout, Search, Brain, Bot } from 'lucide-react';
 
 const WhyWorkWithMe = () => {
   const reasons = [
     { icon: Layout, title: 'Modern Premium UI', desc: 'Interfaces that feel luxurious, cutting-edge, and build immediate trust.' },
     { icon: Zap, title: 'Fast-Loading & Mobile Ready', desc: 'Optimized for lightning-fast performance across all devices and screen sizes.' },
-    { icon: Search, title: 'SEO & Business Focused', desc: 'Built to rank higher, convert better, and achieve your business goals.' },
+    { icon: Bot, title: 'AI & Automation', desc: 'Building intelligent AI agents and automation systems that solve real problems and streamline workflows.' },
     { icon: Brain, title: 'Psychology-Driven Design', desc: 'Understanding user behavior to craft intuitive and engaging digital journeys.' },
-    { icon: MessageSquare, title: 'Strong Communication', desc: 'Transparent, clear, and professional collaboration from start to finish.' },
+    { icon: Search, title: 'SEO & Business Focused', desc: 'Built to rank higher, convert better, and achieve your business goals.' },
     { icon: CheckCircle2, title: 'Human-Centered Experience', desc: 'Focusing on the people who will actually use your product.' },
   ];
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X, Code2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -147,15 +147,15 @@ const Navbar = () => {
             <div className="flex justify-center gap-8 text-sm text-foreground/40 mt-12 pb-8">
               <div className="flex flex-col items-center gap-1">
                 <div className="w-1.5 h-1.5 rounded-full bg-primary mb-1" />
-                Premium UI/UX
+                Web Development
+              </div>
+              <div className="flex flex-col items-center gap-1">
+                <div className="w-1.5 h-1.5 rounded-full bg-primary mb-1" />
+                AI & Agentic AI
               </div>
               <div className="flex flex-col items-center gap-1">
                 <div className="w-1.5 h-1.5 rounded-full bg-primary mb-1" />
                 Full Stack Dev
-              </div>
-              <div className="flex flex-col items-center gap-1">
-                <div className="w-1.5 h-1.5 rounded-full bg-primary mb-1" />
-                Business Focused
               </div>
             </div>
           </motion.div>
