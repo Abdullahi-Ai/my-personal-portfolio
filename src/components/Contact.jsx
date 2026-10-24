@@ -83,7 +83,7 @@ const Contact = () => {
                 </div>
               </a>
 
-              <a href="https://www.linkedin.com/in/osman-noor-08a297358/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group p-4 glass-card rounded-xl hover:border-primary/50 transition-all">
+              <a href="https://www.linkedin.com/in/osman-noor-08a297358" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group p-4 glass-card rounded-xl hover:border-primary/50 transition-all">
                 <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors text-primary">
                   <LinkedinIcon />
                 </div>
@@ -108,7 +108,7 @@ const Contact = () => {
               <a href="https://github.com/Abdullahi-Ai" target="_blank" rel="noopener noreferrer" aria-label="View Abdullahi Ibrahim (Osman)'s projects on GitHub" className="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:text-primary transition-colors hover:-translate-y-1">
                 <GithubIcon />
               </a>
-              <a href="https://www.linkedin.com/in/osman-noor-08a297358/" target="_blank" rel="noopener noreferrer" aria-label="Connect with Abdullahi Ibrahim (Osman) on LinkedIn" className="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:text-primary transition-colors hover:-translate-y-1">
+              <a href="https://www.linkedin.com/in/osman-noor-08a297358" target="_blank" rel="noopener noreferrer" aria-label="Connect with Abdullahi Ibrahim (Osman) on LinkedIn" className="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:text-primary transition-colors hover:-translate-y-1">
                 <LinkedinIcon />
               </a>
               <a href="https://www.instagram.com/osmanibrahim5181/" target="_blank" rel="noopener noreferrer" aria-label="Follow Abdullahi Ibrahim (Osman) on Instagram" className="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:text-primary transition-colors hover:-translate-y-1">

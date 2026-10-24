@@ -88,7 +88,7 @@ const About = () => {
                 <GithubIcon /> GitHub
               </a>
               <a
-                href="https://www.linkedin.com/in/osman-noor-08a297358/"
+                href="https://www.linkedin.com/in/osman-noor-08a297358"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full glass-card hover:border-primary/50 text-foreground/90 hover:text-primary transition-all text-sm font-medium"

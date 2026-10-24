@@ -36,7 +36,7 @@ try {
   add(
     'Verified social URLs in deployed HTML',
     home.body.includes('https://github.com/Abdullahi-Ai') &&
-      home.body.includes('https://www.linkedin.com/in/osman-noor-08a297358/') &&
+      home.body.includes('https://www.linkedin.com/in/osman-noor-08a297358') &&
       home.body.includes('https://www.instagram.com/osmanibrahim5181/')
   );
   add('No noindex directive', !/noindex/i.test(home.body));

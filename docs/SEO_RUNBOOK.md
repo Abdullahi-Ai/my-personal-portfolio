@@ -35,7 +35,7 @@ Indexing can take days to weeks. Using the disambiguated name **Abdullahi Ibrahi
   - **Website:** `https://www.abdullahiibrahim.co.ke`
   - **Location:** `Kenya`
   - Pin the repositories that best represent your work (`osman-accessories-ai`, `my-personal-portfolio`, and the project repos listed on the site).
-- **LinkedIn (`https://www.linkedin.com/in/osman-noor-08a297358/`)**:
+- **LinkedIn (`https://www.linkedin.com/in/osman-noor-08a297358`)**:
   - Linked in JSON-LD `sameAs`. When ready, consider updating the headline/about section to mention `Abdullahi Ibrahim (Osman) — Software Developer in Kenya` and link `https://www.abdullahiibrahim.co.ke` so Google sees bidirectional verification.
 - **Instagram (`https://www.instagram.com/osmanibrahim5181/`)**:
   - Linked in JSON-LD `sameAs` and visible on the site.

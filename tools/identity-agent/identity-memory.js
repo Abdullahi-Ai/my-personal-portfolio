@@ -28,7 +28,7 @@ export const identity = {
     },
     {
       platform: "LinkedIn",
-      url: "https://www.linkedin.com/in/osman-noor-08a297358/",
+      url: "https://www.linkedin.com/in/osman-noor-08a297358",
       verified: true,
       verifiedDate: "2026-10-24",
       source: "Confirmed by owner under the unified identity 'Abdullahi Ibrahim (Osman)' for inclusion in JSON-LD sameAs.",

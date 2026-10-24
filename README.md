@@ -89,7 +89,7 @@ This portfolio includes:
 
 - **Email**: osmannoor75200@gmail.com
 - **GitHub**: [Abdullahi-Ai](https://github.com/Abdullahi-Ai)
-- **LinkedIn**: [Abdullahi Ibrahim (Osman)](https://www.linkedin.com/in/osman-noor-08a297358/)
+- **LinkedIn**: [Abdullahi Ibrahim (Osman)](https://www.linkedin.com/in/osman-noor-08a297358)
 - **Instagram**: [@osmanibrahim5181](https://www.instagram.com/osmanibrahim5181/)
 
 ---
