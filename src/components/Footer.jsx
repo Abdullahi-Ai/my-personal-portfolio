@@ -54,6 +54,15 @@ const Footer = () => {
             >
               Instagram
             </a>
+            <a
+              href="https://wa.me/254781764187"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors"
+              aria-label="Chat with Abdullahi Ibrahim on WhatsApp"
+            >
+              WhatsApp
+            </a>
           </div>
 
           <div className="text-xs sm:text-sm text-foreground/50 text-center">
