@@ -33,6 +33,12 @@ try {
   add('Deployed title matches local build', !!localTitle && liveTitle === localTitle, `live="${liveTitle}" local="${localTitle}"`);
   add('Canonical URL is the deployed URL', home.body.includes(`rel="canonical" href="${BASE}"`));
   add('JSON-LD present in deployed HTML', (home.body.match(/application\/ld\+json/g) || []).length >= 3);
+  add(
+    'Verified social URLs in deployed HTML',
+    home.body.includes('https://github.com/Abdullahi-Ai') &&
+      home.body.includes('https://www.linkedin.com/in/osman-noor-08a297358/') &&
+      home.body.includes('https://www.instagram.com/osmanibrahim5181/')
+  );
   add('No noindex directive', !/noindex/i.test(home.body));
 
   const robots = await get('robots.txt');
