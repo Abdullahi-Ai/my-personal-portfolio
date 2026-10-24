@@ -1,6 +1,6 @@
 {
   "url": "https://www.abdullahiibrahim.co.ke/",
-  "checkedAt": "2026-10-24T10:10:48.230Z",
+  "checkedAt": "2026-10-24T10:50:17.006Z",
   "checks": [
     {
       "name": "Homepage returns HTTP 200",
@@ -9,8 +9,8 @@
     },
     {
       "name": "Deployed title matches local build",
-      "ok": true,
-      "detail": "live=\"Abdullahi Ibrahim | Software Developer\" local=\"Abdullahi Ibrahim | Software Developer\""
+      "ok": false,
+      "detail": "live=\"Abdullahi Ibrahim | Software Developer\" local=\"Abdullahi Ibrahim (Osman) | Software Developer in Kenya\""
     },
     {
       "name": "Canonical URL is the deployed URL",

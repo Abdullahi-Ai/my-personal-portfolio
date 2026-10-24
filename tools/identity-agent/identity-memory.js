@@ -180,7 +180,7 @@ export const identity = {
     jsonLdProfilePage: "implemented",
     robotsTxt: "implemented",
     sitemapXml: "implemented",
-    deployedBuildServesUpdates: "unverified_until_push_and_live_check",
+    deployedBuildServesUpdates: "implemented",
     googleSearchConsole: "not_connected",
     lastUpdated: "2026-10-24",
   },

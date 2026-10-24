@@ -113,34 +113,21 @@ report.push('## 6. Remaining Manual Steps');
 report.push('');
 report.push('### Google Search Console');
 report.push('1. Go to https://search.google.com/search-console/about');
-report.push('2. Add property: `https://my-personal-portfolio-delta-one.vercel.app/`');
+report.push('2. Add property: `https://www.abdullahiibrahim.co.ke/` (or Domain property `abdullahiibrahim.co.ke`)');
 report.push('3. Verify ownership via HTML tag, DNS, or file upload');
-report.push('4. Submit sitemap: `https://my-personal-portfolio-delta-one.vercel.app/sitemap.xml`');
-report.push('5. Request indexing for the homepage');
+report.push('4. Submit sitemap: `https://www.abdullahiibrahim.co.ke/sitemap.xml`');
+report.push('5. Request indexing for `https://www.abdullahiibrahim.co.ke/`');
 report.push('');
-report.push('### Custom Domain (Future)');
-report.push('1. Purchase a domain (e.g., abdullahiai.dev)');
-report.push('2. Connect domain in Vercel dashboard');
-report.push('3. Update canonical URL, OG URL, and sitemap URLs');
-report.push('4. Update JSON-LD structured data URLs');
-report.push('5. Re-verify in Google Search Console');
-report.push('6. Set up 301 redirect from old Vercel URL');
-report.push('');
-report.push('### OG Image');
-report.push('1. Create a 1200x630px branded image with name and title');
-report.push('2. Replace `public/og-image.png`');
-report.push('');
-
 report.push('## 7. Target Search Queries');
 report.push('');
 report.push('Monitor these queries in Google Search Console:');
 report.push('');
 const targetQueries = [
-  'Abdullahi Ibrahim',
+  'Abdullahi Ibrahim Osman',
+  'Abdullahi Ibrahim Osman Software Developer',
+  'Abdullahi Ibrahim Software Developer Kenya',
+  'Abdullahi Ibrahim Portfolio',
   'Abdullahi-Ai',
-  'Abdullahi Ibrahim Software Developer',
-  'Abdullahi Ibrahim AI Developer',
-  'Abdullahi Ibrahim AI Agent Developer',
 ];
 for (const q of targetQueries) {
   report.push(`- \`${q}\``);
